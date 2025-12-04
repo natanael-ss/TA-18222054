@@ -60,7 +60,7 @@
 \contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{16}{section.3.3}%
 \contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{16}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{18}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {III.3.2.1}KF-1: Kontrol Akses}{19}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {III.3.2.1}KF-1: Kontrol Akses}{18}{subsubsection.3.3.2.1}%
 \contentsline {subsubsection}{\numberline {III.3.2.2}KF-2: Deteksi Wajah}{20}{subsubsection.3.3.2.2}%
 \contentsline {subsubsection}{\numberline {III.3.2.3}KF-3: Pengenalan Wajah}{21}{subsubsection.3.3.2.3}%
 \babel@toc {english}{}\relax 
@@ -69,16 +69,21 @@
 \babel@toc {indonesian}{}\relax 
 \contentsline {subsubsection}{\numberline {III.3.2.4}KF-4: Manajemen Pendaftaran}{23}{subsubsection.3.3.2.4}%
 \contentsline {subsubsection}{\numberline {III.3.2.5}KF-5: Integrasi Sistem}{25}{subsubsection.3.3.2.5}%
-\contentsline {subsubsection}{\numberline {III.3.2.6}KF-6: Keselamatan/safety}{25}{subsubsection.3.3.2.6}%
-\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{26}{chapter.4}%
-\contentsline {section}{\numberline {IV.1}Diagram Konseptual}{26}{section.4.1}%
-\contentsline {section}{\numberline {IV.2}Penjelasan Desain}{29}{section.4.2}%
-\contentsline {subsection}{\numberline {IV.2.1}Spesifikasi Perangkat Keras}{29}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {IV.2.2}Diagram Komponen}{30}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {IV.2.3}Logika Autentikasi}{31}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {IV.2.4}Alur Sistem Pendaftaran}{32}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {IV.2.5}}{32}{subsection.4.2.5}%
-\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{34}{chapter.5}%
+\contentsline {subsubsection}{\numberline {III.3.2.6}KF-6: Keselamatan/safety}{26}{subsubsection.3.3.2.6}%
+\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{27}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Diagram Konseptual}{27}{section.4.1}%
+\contentsline {section}{\numberline {IV.2}Penjelasan Desain}{30}{section.4.2}%
+\contentsline {subsection}{\numberline {IV.2.1}Spesifikasi Perangkat Keras}{30}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {IV.2.2}Diagram Komponen}{31}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {IV.2.3}Logika Autentikasi}{32}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {IV.2.4}Alur Sistem Pendaftaran}{33}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {IV.2.5}}{33}{subsection.4.2.5}%
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{35}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Rencana Implementasi}{35}{section.5.1}%
+\contentsline {subsection}{\numberline {V.1.1}Linimasa Pengerjaan}{35}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {V.1.2}Implementasi Prototipe}{37}{subsection.5.1.2}%
+\contentsline {section}{\numberline {V.2}Rencana Pengujian dan Evaluasi}{38}{section.5.2}%
+\contentsline {section}{\numberline {V.3}Analisis Risiko dan Mitigasi}{40}{section.5.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 

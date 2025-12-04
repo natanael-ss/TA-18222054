@@ -23,23 +23,68 @@ Sistem ini biasanya melibatkan kredensial (misalnya kartu, token, biometrik), pe
 Dengan demikian, kontrol akses tidak hanya berfungsi sebagai pintu fisik, tetapi juga sebagai sistem audit yang merekam aktivitas masuk-keluar, memelihara catatan akses, dan mendukung keamanan serta manajemen operasional bangunan.
 Dalam literatur terbaru, sistem ini digambarkan sebagai bagian dari manajemen identitas dan akses (Identity and Access Management - IAM) yang menjadi fondasi keamanan dalam lingkungan IoT dan bangunan cerdas. \autocite{wang2023accesscontrol}
 
+\section{Gerbang sebagai Kontrol Akses}
+Gerbang sebagai elemen kontrol akses fisik harus memenuhi standar keselamatan dan kenyamanan pengguna sesuai ketentuan bangunan gedung.
+Regulasi nasional menekankan bahwa pintu atau portal yang digunakan pada area dengan pergerakan manusia dalam jumlah besar harus dapat terbuka mengikuti arah evakuasi, agar alur keluar lebih aman dan tidak menimbulkan hambatan.
+\textcite{pup_r14_2017} menetapkan bahwa \textit{turnstile} atau pintu akses wajib memiliki lebar bukaan efektif minimal 60 cm, sedangkan akses untuk pengguna disabilitas harus memiliki lebar minimal 80 cm.
+Ketentuan tersebut menjadi acuan penting dalam menentukan spesifikasi dan dimensi gerbang yang akan digunakan dalam sistem kontrol akses berbasis otomasi.
+Gambar \ref{gambar:contoh-pintu-akses} menunjukkan contoh implementasi desain pintu akses tersebut sebagaimana tercantum pada lampiran Peraturan Menteri PUPR 14/PRT/M/2017.
+
+\begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.7\textwidth]{image/pintu-akses-2.png}
+	\caption{Contoh penerapan desain pada pintu akses (\textit{turnstile})}
+	\label{gambar:contoh-pintu-akses}
+\end{figure}
+
+Selain ketentuan regulatif, hasil kajian teknis turut memberikan dasar dalam pemilihan desain gerbang.
+\autocite{ding2021winggate} menemukan bahwa gerbang tipe \textit{wing} memiliki kinerja yang lebih baik dibandingkan tipe \textit{flat}, baik dari sisi pengaturan aliran pengguna maupun kemampuan mendukung proses evakuasi.
+Temuan tersebut menegaskan bahwa desain gerbang tidak hanya berkaitan dengan estetika atau mekanisme mekanik, tetapi juga berkontribusi terhadap keselamatan dan efisiensi operasional bangunan dalam skenario penggunaan normal maupun keadaan darurat.
 \section{Pengenalan Wajah}
 Pengenalan wajah merupakan salah satu teknologi dalam bidang visi komputer yang berfungsi untuk mengidentifikasi atau memverifikasi identitas seseorang berdasarkan citra atau rekaman video.
 Pada dasarnya, teknologi ini memecahkan persoalan pengenalan pola visual, di mana sistem harus mampu mengenali wajah sebagai objek tiga dimensi yang ditangkap dalam bentuk gambar dua dimensi, meskipun terdapat variasi pencahayaan, sudut pandang, maupun ekspresi wajah.
-Dalam Handbook of Face Recognition, Li, Jain, dan Deng (2024) menjelaskan bahwa sebuah sistem pengenalan wajah umumnya terdiri dari empat komponen utama: \textit{face detection, alignment, feature extraction}, dan \textit{matching}.
+\textcite{li2024handbook_face_recognition} menjelaskan bahwa sebuah sistem pengenalan wajah umumnya terdiri dari empat komponen utama: \textit{face detection, alignment, feature extraction}, dan \textit{matching}.
 Proses lokalisasi dan normalisasi wajah melalui dua tahapan awal tersebut menjadi prasyarat sebelum fitur wajah dapat diekstraksi dan dibandingkan dalam proses pengenalan.
 
 Penggunaan teknologi pengenalan wajah sebagai metode autentikasi biometrik semakin meluas di berbagai sektor, mulai dari pertahanan dan keamanan, layanan finansial, hingga aplikasi sehari-hari seperti kontrol akses pada perangkat dan bangunan.
-Tren adopsi biometrik ini juga tercermin dalam laporan HID Global yang dikutip oleh Jadhav (2024), yang menunjukkan peningkatan penggunaan biometrik untuk kontrol akses dari 30 persen menjadi 39 persen dalam dua tahun terakhir.
+Tren adopsi biometrik ini juga tercermin dalam laporan HID Global yang dikutip oleh  \textcite{Jadhav_2024}, yang menunjukkan peningkatan penggunaan biometrik untuk kontrol akses dari 30 persen menjadi 39 persen dalam dua tahun terakhir.
 Temuan ini mengindikasikan bahwa pengenalan wajah semakin diandalkan sebagai solusi autentikasi yang cepat, praktis, dan aman bagi berbagai kebutuhan operasional.
+
+\subsubsection{Parameter Evaluasi Kinerja Biometrik}
+Untuk menilai tingkat keandalan sistem pengenalan wajah, standar internasional ISO/IEC 19795-1 menetapkan sejumlah metrik utama yang digunakan dalam proses pengujian \parencite{iso19795}.
+\begin{enumerate}
+	\item \textit{Accuracy}, yaitu perbandingan antara jumlah prediksi yang benar dengan total keseluruhan percobaan.
+	\item \textit{False Acceptance Rate (FAR)}, yaitu tingkat kesalahan ketika sistem justru menerima atau mengenali individu yang tidak dikenal atau tidak terdaftar sebagai pengguna sah. Dalam sistem keamanan gedung, nilai FAR harus dijaga serendah mungkin.
+	\item \textit{False Rejection Rate (FRR)}, yaitu tingkat kesalahan ketika sistem menolak pengguna yang sebenarnya terdaftar dan memiliki izin akses. FRR yang tinggi dapat mengurangi kenyamanan pengguna.
+	\item Waktu Respons atau \textit{Latency}, yaitu waktu yang dibutuhkan sistem mulai dari saat wajah terdeteksi oleh kamera hingga perintah kontrol dikirim ke aktuator.
+
+\end{enumerate}
+
 
 \section{Keamanan Data dan Privasi}
 Pengelolaan data biometrik, termasuk data wajah, membutuhkan standar perlindungan yang tinggi karena sifatnya yang sensitif dan tidak dapat diganti apabila bocor atau disalahgunakan.
 Dalam kerangka regulasi nasional, seluruh kegiatan yang melibatkan pengumpulan, penyimpanan, maupun pemrosesan data pribadi wajib mengikuti ketentuan yang tercantum dalam Undang-Undang Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi.
 Salah satu prinsip penting yang diatur dalam Pasal 20 UU PDP adalah kewajiban memperoleh persetujuan eksplisit dari pemilik data sebelum data tersebut diproses.
-Ketentuan ini memastikan bahwa penggunaan data biometrik dilakukan secara transparan dan berdasarkan persetujuan sadar dari subjek data (Presiden Republik Indonesia 2022).
+Ketentuan ini memastikan bahwa penggunaan data biometrik dilakukan secara transparan dan berdasarkan persetujuan sadar dari subjek data.
 
-Dari sisi teknis, keamanan data biometrik menuntut penerapan mekanisme perlindungan yang kuat, terutama saat data disimpan dalam basis data. Abusham dkk. (2023) merekomendasikan penggunaan algoritma enkripsi seperti Advanced Encryption Standard (AES) sebagai lapisan perlindungan pada data at rest. Melalui enkripsi, representasi numerik dari wajah (misalnya vektor fitur) akan disimpan dalam bentuk terenkripsi sehingga tidak dapat diakses ataupun dikonversi kembali menjadi citra wajah asli tanpa kunci dekripsi yang valid. Pendekatan ini berfungsi sebagai mitigasi penting apabila terjadi pencurian perangkat atau serangan terhadap basis data, karena data biometrik tetap tidak dapat digunakan tanpa kunci yang sah.
+Dari sisi teknis, keamanan data biometrik menuntut penerapan mekanisme perlindungan yang kuat, terutama saat data disimpan dalam basis data.
+\textcite{abusham2023facial} merekomendasikan penggunaan algoritma enkripsi seperti \textit{Advanced Encryption Standard} (AES) sebagai lapisan perlindungan pada data saat disimpan.
+Melalui enkripsi, representasi numerik dari wajah (misalnya vektor fitur) akan disimpan dalam bentuk terenkripsi sehingga tidak dapat diakses ataupun dikonversi kembali menjadi citra wajah asli tanpa kunci dekripsi yang valid.
+Pendekatan ini berfungsi sebagai mitigasi penting apabila terjadi pencurian perangkat atau serangan terhadap basis data, karena data biometrik tetap tidak dapat digunakan tanpa kunci yang sah.
 
 \section{Pengembangan Sistem Gerbang Otomatis pada KAI}
-PT Kereta Api Indonesia (KAI) telah mengimplementasikan layanan Face Recognition Boarding sebagai bagian dari transformasi digital untuk mempercepat proses keberangkatan kereta api jarak jauh. Layanan ini memungkinkan penumpang melakukan verifikasi identitas secara otomatis melalui kamera berbasis pengenalan wajah, sehingga tidak perlu lagi menunjukkan KTP maupun mencetak boarding pass. Sistem ini mulai digunakan di beberapa stasiun besar, seperti Stasiun Gambir sejak September 2023, dan akan diperluas ke stasiun lainnya. Untuk dapat memanfaatkannya, penumpang harus mendaftarkan identitas dan foto wajah melalui aplikasi Access by KAI, yang kemudian diverifikasi dan dikaitkan dengan data tiket elektronik. Saat melakukan boarding, wajah penumpang dicocokkan dengan data yang telah terdaftar, dan jika valid, gerbang terbuka secara otomatis. Pendekatan ini diklaim meningkatkan efisiensi, keamanan, serta mengurangi potensi penyalahgunaan identitas atau tiket. Meskipun demikian, KAI tidak menetapkan layanan ini sebagai satu-satunya jalur akses; alternatif tetap disediakan guna memenuhi prinsip perlindungan data pribadi sebagaimana diatur dalam UU No. 27 Tahun 2022.
+PT Kereta Api Indonesia (KAI) telah mengimplementasikan layanan \textit{Face Recognition Boarding} sebagai bagian dari transformasi digital untuk mempercepat proses keberangkatan kereta api jarak jauh.
+Layanan ini memungkinkan penumpang melakukan verifikasi identitas secara otomatis melalui kamera berbasis pengenalan wajah, sehingga tidak perlu lagi menunjukkan KTP maupun mencetak \textit{boarding pass}.
+Sistem ini mulai digunakan di beberapa stasiun besar, seperti Stasiun Gambir sejak September 2023, dan akan diperluas ke stasiun lainnya.
+Untuk dapat memanfaatkannya, penumpang harus mendaftarkan identitas dan foto wajah melalui aplikasi Access by KAI, yang kemudian diverifikasi dan dikaitkan dengan data tiket elektronik.
+Saat melakukan \textit{boarding}, wajah penumpang dicocokkan dengan data yang telah terdaftar, dan jika valid, gerbang terbuka secara otomatis.
+Pendekatan ini diklaim meningkatkan efisiensi, keamanan, serta mengurangi potensi penyalahgunaan identitas atau tiket. Meskipun demikian, KAI tidak menetapkan layanan ini sebagai satu-satunya jalur akses; alternatif tetap disediakan guna memenuhi prinsip perlindungan data pribadi sebagaimana diatur dalam UU No. 27 Tahun 2022.
+
+\section{Metodologi Design Thinking}
+Pendekatan pengembangan sistem pada penelitian ini menggunakan metodologi \textit{Design Thinking}, yaitu kerangka kerja iteratif yang berfokus pada pemahaman mendalam terhadap pengguna sebagai dasar pengembangan solusi.
+\textcite{Plattner_2010} menyatakan bahwa proses ini dimulai dari tahap \textit{Empathize}, yaitu pengumpulan wawasan mengenai perilaku, kebutuhan, dan tantangan pengguna melalui observasi maupun interaksi langsung.
+Selanjutnya, tahap \textit{Define} digunakan untuk menyusun dan merumuskan inti permasalahan berdasarkan temuan yang telah terkumpul.
+Pada tahap \textit{Ideate}, berbagai kemungkinan solusi dieksplorasi dan dikembangkan melalui teknik kreatif seperti \textit{brainstorming} atau pemetaan ide.
+Tahap berikutnya adalah \textit{Prototype}, yaitu pembuatan representasi awal dari solusi agar dapat diuji dan divalidasi secara cepat.
+Terakhir, tahap \textit{Test} dilakukan untuk mengumpulkan umpan balik pengguna, yang kemudian menjadi dasar untuk penyempurnaan solusi secara berulang \autocite{Plattner_2010}.

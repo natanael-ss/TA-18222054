@@ -20,18 +20,30 @@ Proses penerimaan tamu saat ini mengandalkan interaksi langsung dengan petugas r
 
 Alur ini menunjukkan bahwa seluruh proses penerimaan tamu sangat bergantung pada komunikasi informal dan pengawasan manual oleh resepsionis. Ketergantungan pada proses manual ini menimbulkan sejumlah risiko, antara lain keterbatasan akurasi verifikasi identitas, potensi akses tanpa izin saat petugas lengah, serta tidak tersedianya data kunjungan untuk evaluasi keamanan gedung.
 \subsection{Kondisi Lobby Saat Ini}
-Hasil peninjauan area lobi menunjukkan bahwa gedung belum dilengkapi dengan perangkat pendukung sistem kontrol akses apa pun. Akses menuju lift terbuka secara langsung dari area lobi, hanya diawasi oleh petugas resepsionis. Ketiadaan infrastruktur ini mengakibatkan seluruh proses penyaringan tamu harus dilakukan secara manual dan tidak memiliki \textit{backup} sistemik apabila petugas tidak berada di tempat atau terjadi gangguan operasional.
+Hasil peninjauan area lobi menunjukkan bahwa gedung belum dilengkapi dengan perangkat pendukung sistem kontrol akses apa pun.
+Akses menuju lift terbuka secara langsung dari area lobi, hanya diawasi oleh petugas keamanan.
+Tidak adanya sistem kontrol akses mengakibatkan seluruh proses penyaringan tamu harus dilakukan secara manual dan tidak memiliki \textit{backup} apabila petugas tidak berada di tempat. 
+Gambar \ref{gambar:lobi-iip} menunjukkan gambaran dari lobi Gedung ITB Innovation Park saat ini.
+
+\begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.7\textwidth]{image/denah-sebelum.png}
+	\caption{Kondisi lapangan dari lobi Gedung IIP}
+	\label{gambar:lobi-iip}
+\end{figure}
+
 \section{Analisis Kebutuhan}
 Tahap ini bertujuan untuk mengidentifikasi kebutuhan yang harus dipenuhi dalam pengembangan sistem kontrol akses di Gedung ITB Innovation Park. Analisis dilakukan dengan memperhatikan kondisi operasional saat ini, pola interaksi antara tamu dan petugas, serta kebutuhan pengelola gedung terhadap keamanan dan efisiensi. Hasil analisis kebutuhan ini menjadi dasar dalam menentukan fitur, komponen, dan alur sistem yang akan dikembangkan.
 \subsection{Identifikasi Masalah Pengguna}
 Berdasarkan hasil observasi di lobi Gedung ITB Innovation Park, proses pengaturan tamu yang berkunjung menunjukkan sejumlah permasalahan yang memengaruhi efisiensi dan keamanan operasional. Tamu yang datang belum memiliki alur registrasi yang jelas dan terstruktur, sehingga verifikasi identitas sangat bergantung pada percakapan langsung dengan resepsionis. Kondisi ini menyebabkan alur masuk yang tidak konsisten dan rentan menimbulkan antrean pada jam sibuk. Selain itu, ketiadaan sistem pencatatan kunjungan membuat aktivitas tamu tidak terdokumentasi, sehingga menyulitkan pengelola gedung dalam melakukan penelusuran dan audit keamanan. Pengguna gedung, baik resepsionis maupun pengelola, juga tidak memiliki alat bantu untuk mengontrol area mana saja yang boleh diakses tamu maupun jangka waktu kunjungannya. Permasalahan tersebut menunjukkan perlunya sistem yang dapat mengatur proses kunjungan tamu secara lebih tertib, aman, dan terdigitalisasi.
 \subsection{Kebutuhan Fungsional}
-xxx
-\input{table/fungsionalReq.tex}
 Kebutuhan fungsional merupakan fitur atau fungsi utama yang harus dimiliki oleh sistem agar dapat memenuhi kebutuhan pengguna dan menyelesaikan permasalahan yang telah diidentifikasi pada subbab sebelumnya.
 Rincian kebutuhan nonfungsional disajikan pada tabel \ref{tbl:func-req}.
+\input{table/fungsionalReq.tex}
 \subsection{Kebutuhan Nonfungsional}
-Rincian kebutuhan nonfungsional disajikan pada tabel \ref{tbl:nonfunc-req}.
+Kebutuhan nonfungsional menentukan batasan kualitas yang harus dipenuhi sistem, seperti target akurasi, kapasitas basis data, waktu respons, keamanan data, serta keandalan operasi.
+Rincian kebutuhan nonfungsional ditampilkan pada tabel \ref{tbl:nonfunc-req}.
 \input{table/nonfungsionalReq.tex}
 
 \section{Analisis Pemilihan Solusi}
@@ -40,14 +52,14 @@ Setiap alternatif akan dianalisis dan dibandingkan melalui pendekatan \textit{tr
 \subsection{Alternatif Solusi}
 Berikut merupakan rangkuman alternatif solusi yang dapat digunakan untuk memenuhi masing-masing kebutuhan fungsional dari sistem.
 \begin{enumerate}
-    \item KF-01 Kontrol Akses
+    \item KF-1 Kontrol Akses
     \begin{enumerate}[a.]
         \item \textit{Swing Barrier}, yaitu tipe gerbang yang membuka dan menutup ke arah dalam atau luar.
         \item \textit{Flap Barrier}, yaitu tipe gerbang yang membuka dan menutup dengan menggeser penghalang ke arah samping.
         \item \textit{Tripod Gate}, yaitu tipe gerbang dengan 3 batang besi yang dapat berputar searah saat kunci terbuka.
     \end{enumerate}
 
-    \item KF-02 Pendeteksi Wajah
+    \item KF-2 Deteksi Wajah
     \begin{enumerate}[a.]
         \item \textit{Face recognition}, yaitu teknologi autentikasi dengan mendeteksi dan mengenali wajah pengguna.
         \item RFID (\textit{Radio Frequency Identifier}), yaitu teknologi autentikasi yang menggunakan kartu yang memancarkan radio frekuensi tertentu.
@@ -56,28 +68,36 @@ Berikut merupakan rangkuman alternatif solusi yang dapat digunakan untuk memenuh
     \end{enumerate}
 
     \item KF-03 Pengenalan Wajah
+    
+    Alternatif Solusi untuk pengenalan wajah adalah kombinasi dari alternatif solusi untuk \textit{Feature Extraction} dan \textit{Matching} 
+    \textit{Feature Extraction}:
     \begin{enumerate}[a.]
-        \item \textit{Face recognition}, yaitu teknologi autentikasi dengan mendeteksi dan mengenali wajah pengguna.
-        \item RFID (\textit{Radio Frequency Identifier}), yaitu teknologi autentikasi yang menggunakan kartu yang memancarkan radio frekuensi tertentu.
-        \item Sidik jari, yaitu teknologi autentikasi yang memanfaatkan keunikan pola jari manusia untuk mengenali pengguna.
-        \item RFID + Pengenalan Wajah, gabungan dari teknologi pengenalan wajah dan RFID untuk melengkapi kelebihan dan kekurangan masing-masing.
+        \item ResNet-50, yaitu arsitektur CNN dengan 50 layer yang menggunakan mekanisme residual learning, menjadi backbone umum untuk pengenalan wajah karena mampu mengekstraksi fitur wajah yang kuat dan stabil.
+        \item MobileFaceNet, yaitu model CNN ringan yang cocok digunakan pada perangkat kecil, tetapi masih cukup baik dalam menangkap ciri penting dari wajah.
+    \end{enumerate}
+    \medskip
+    \medskip
+    \textit{Loss Function}:
+    \begin{enumerate}[a.]
+        \item ArcFace, metode pelatihan yang membedakan wajah dengan `menjauhkan' jarak antar wajah yang berbeda dan `mendekatkan' wajah dari orang yang sama. 
+        \item MagFace, metode pelatihan yang tidak hanya membuat model mengenali wajah, tapi juga bisa menilai kualitas foto wajah, sehingga hasil pengenalannya lebih stabil.
     \end{enumerate}
 
-    \item KF-04 Manajemen Data
+    \item KF-4 Manajemen Pendaftaran
     \begin{enumerate}[a.]
         \item Aplikasi Web, menggunakan website yang dapat diakses melalui browser untuk pendaftaran.
         \item Aplikasi Desktop, menggunakan aplikasi berbasis desktop untuk perangkat PC resepsionis.
         \item Aplikasi Mobile, menggunakan aplikasi berbasis mobile untuk ponsel pengguna.
     \end{enumerate}
 
-    \item KF-05 Integrasi Sistem
+    \item KF-5 Integrasi Sistem
     \begin{enumerate}[a.]
-        \item Integrasi berbasis API
-        \item Integrasi berbasis \textit{Message Queue}
-        \item Integrasi berbasis \textit{Webhook}
+        \item Integrasi berbasis API, memungkinkan sistem saling bertukar data secara langsung melalui HTTP \textit{request} dan \textit{response}.
+        \item Integrasi berbasis \textit{Message Queue}, mengirim dan memproses pesan secara asinkron melalui antrian.
+        \item Integrasi berbasis \textit{Webhook}, mengirimkan notifikasi otomatis ke sistem lain setiap adanya peristiwa (\textit{event}) tertentu.
     \end{enumerate}
 
-    \item KF-06 Keselamatan/\textit{safety}
+    \item KF-6 Keselamatan/\textit{safety}
     \begin{enumerate}[a.]
         \item Gerbang \textit{fail-safe}, yaitu gerbang yang memiliki kondisi terbuka saat tidak mendapatkan aliran listrik.
         \item Tombol Darurat, yaitu tombol yang dapat membuka gerbang tanpa autentikasi.
@@ -86,4 +106,40 @@ Berikut merupakan rangkuman alternatif solusi yang dapat digunakan untuk memenuh
 
 \end{enumerate}
 \subsection{Analisis Penentuan Solusi}
-\lipsum[9]
+Untuk menentukan pemilihan solusi terbaik, dilakukan analisis kuantitatif untuk memilih solusi terbaik. Analisis kuantitatif dilakukan dengan metode \textit{Weighted Scoring Model} (WSM) untuk membandingkan setiap alternatif solusi. berikut merupakan analisis WSM dari setiap alternatif solusi setiap kebutuhan.
+% \input{table/tab_alternatif_solusi.tex}
+\subsubsection{KF-1: Kontrol Akses}
+\input{table/wsm_fr1_criteria.tex}
+\input{table/wsm_fr1.tex} 
+\subsubsection{KF-2: Deteksi Wajah}
+\input{table/wsm_fr2_criteria.tex}
+\input{table/wsm_fr2.tex} 
+\subsubsection{KF-3: Pengenalan Wajah}
+Berikut merupakan kriteria penilaian dari fungsionalitas pengenalan wajah.
+\input{table/wsm_fr3_criteria.tex}
+Berdasarkan kriteria tersebut, berikut merupakan\textit{Weighted Scoring Model} dari setiap alternatif solusi berikut : 
+\begin{enumerate}
+    \item Solusi 1: ResNet-50 + ArcFace
+    \item Solusi 2: ResNet-50 + MagFace
+    \item Solusi 3: MobileFaceNet + ArcFace
+    \item Solusi 4: MobileFaceNet + MagFace  
+\end{enumerate}
+\input{table/wsm_fr3.tex} 
+Berdasarkan analisis, terlihat bahwa solusi terbaik adalah MobileFaceNet + MagFace, dimana kombinasi ini menawarkan solusi pengenalan wajah yang ringan secara komputasi namun tetap tangguh terhadap citra gambar yang bervariatif, sehingga sangat cocok digunakan pada perangkat terbatas seperti kontroler Raspberry Pi. MobileFaceNet memberikan keunggulan sebagai model yang sangat efisien dengan jumlah parameter yang rendah, memungkinkan inferensi cepat dan akurasi yang memadai. Sementara itu, MagFace merupakan \textit{loss function} yang peka terhadap kualitas citra gambar, sehingga sistem dapat mengurangi kesalahan pada saat mendeteksi dalam pencahayaan rendah, pose yang bervariasi, atau gangguan (\textit{noise}).
+
+\subsubsection{KF-4: Manajemen Pendaftaran}
+Berikut merupakan kriteria penilaian dari fungsionalitas pengenalan wajah.
+\input{table/wsm_fr4_criteria.tex}
+Berdasarkan kriteria tersebut, berikut merupakan \textit{Weighted Scoring Model} dari setiap alternatif solusi.
+\input{table/wsm_fr4.tex} 
+Berdasarkan analisis, terlihat bahwa Aplikasi \textit{web} menawarkan efisiensi waktu, kemudahan, kompatibilitas, dan privasi yang lebih baik dibandingkan dengan \textit{mobile} dan \textit{dekstop}.
+\subsubsection{KF-5: Integrasi Sistem}
+\subsubsection{KF-6: Keselamatan/safety}
+Berdasarkan analisis yang telah dilakukan, solusi terbaik yang dapat kami usulkan adalah:
+\begin{enumerate}
+    \item Kontrol Akses: \textit{Swing Barrier}
+    \item Autentikasi: Kombinasi Pengenalan Wajah + RFID
+    \item Manajemen Pendaftaran: Aplikasi Web
+    \item Integrasi Sistem: Integrasi API
+    \item Keselamatan/\textit{safety}: Kombinasi \textit{Fail-safe gate} + Tombol Darurat.
+\end{enumerate}

@@ -4970,9 +4970,29 @@
     <bcf:citekey order="1" intorder="1">kemenpupr2023</bcf:citekey>
     <bcf:citekey order="2" intorder="1">kemenpupr2024</bcf:citekey>
     <bcf:citekey order="3" intorder="1">wang2023accesscontrol</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">raspberrypi</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">kainz2019raspberry</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">simarmata2021gerbang</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">pup_r14_2017</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">pup_r14_2017</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">ding2021winggate</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">li2024handbook_face_recognition</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">li2024handbook_face_recognition</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Jadhav_2024</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Jadhav_2024</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">iso19795</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">abusham2023facial</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">abusham2023facial</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Plattner_2010</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Plattner_2010</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Plattner_2010</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">li2024handbook_face_recognition</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">li2024handbook_face_recognition</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">pressman2014software</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">nielsen1994usability</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">nielsen1994usability</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">nielsen1994usability</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">nielsen1994usability</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">raspberrypi</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">kainz2019raspberry</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">simarmata2021gerbang</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

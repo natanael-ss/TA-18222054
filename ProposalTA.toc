@@ -17,29 +17,82 @@
 \contentsline {section}{\numberline {II.2}Kontrol Akses}{7}{section.2.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.3}Pengenalan Wajah}{7}{section.2.3}%
-\contentsline {section}{\numberline {II.4}Keamanan Data dan Privasi}{8}{section.2.4}%
-\contentsline {section}{\numberline {II.5}Pengembangan Sistem Gerbang Otomatis pada KAI}{8}{section.2.5}%
-\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{10}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{10}{section.3.1}%
-\contentsline {subsection}{\numberline {III.1.1}Alur Masuk Tamu Saat Ini}{10}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {III.1.2}Kondisi Lobby Saat Ini}{11}{subsection.3.1.2}%
-\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{11}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{11}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{12}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{12}{subsection.3.2.3}%
-\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{13}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{13}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{14}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{16}{chapter.4}%
-\contentsline {section}{\numberline {IV.1}Diagram Konseptual}{16}{section.4.1}%
-\contentsline {section}{\numberline {IV.2}Penjelasan Desain}{19}{section.4.2}%
-\contentsline {subsection}{\numberline {IV.2.1}Spesifikasi Perangkat Keras}{19}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {IV.2.2}Diagram Komponen}{20}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {IV.2.3}Logika Autentikasi}{21}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {IV.2.4}Alur Sistem Pendaftaran}{22}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {IV.2.5}}{22}{subsection.4.2.5}%
-\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{24}{chapter.5}%
+\contentsline {section}{\numberline {II.3}Gerbang sebagai Kontrol Akses}{7}{section.2.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.4}Pengenalan Wajah}{8}{section.2.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {II.4.0.1}Parameter Evaluasi Kinerja Biometrik}{9}{subsubsection.2.4.0.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.5}Keamanan Data dan Privasi}{9}{section.2.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.6}Pengembangan Sistem Gerbang Otomatis pada KAI}{10}{section.2.6}%
+\contentsline {section}{\numberline {II.7}Metodologi Design Thinking}{10}{section.2.7}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{12}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {III.1.1}Alur Masuk Tamu Saat Ini}{12}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {III.1.2}Kondisi Lobby Saat Ini}{13}{subsection.3.1.2}%
+\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{14}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{15}{subsection.3.2.3}%
+\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{16}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{18}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.1}KF-1: Kontrol Akses}{19}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {III.3.2.2}KF-2: Deteksi Wajah}{20}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {III.3.2.3}KF-3: Pengenalan Wajah}{21}{subsubsection.3.3.2.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {III.3.2.4}KF-4: Manajemen Pendaftaran}{23}{subsubsection.3.3.2.4}%
+\contentsline {subsubsection}{\numberline {III.3.2.5}KF-5: Integrasi Sistem}{25}{subsubsection.3.3.2.5}%
+\contentsline {subsubsection}{\numberline {III.3.2.6}KF-6: Keselamatan/safety}{25}{subsubsection.3.3.2.6}%
+\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{26}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Diagram Konseptual}{26}{section.4.1}%
+\contentsline {section}{\numberline {IV.2}Penjelasan Desain}{29}{section.4.2}%
+\contentsline {subsection}{\numberline {IV.2.1}Spesifikasi Perangkat Keras}{29}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {IV.2.2}Diagram Komponen}{30}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {IV.2.3}Logika Autentikasi}{31}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {IV.2.4}Alur Sistem Pendaftaran}{32}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {IV.2.5}}{32}{subsection.4.2.5}%
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{34}{chapter.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 

@@ -19,6 +19,184 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global}
+    \entry{abusham2023facial}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7cf62fa01ab08153951e535098553ebb}{%
+           family={Abusham},
+           familyi={A\bibinitperiod},
+           given={Eimad\bibnamedelima Abdu},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba91e3b2de939697569fb81dd22cff1d}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={Basil},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a98253a27a9681ca7659af4f4c5e23cb}{%
+           family={Zia},
+           familyi={Z\bibinitperiod},
+           given={Kashif},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a176fedc9aadd8cdfd9e362284928c3f}{%
+           family={Rehman},
+           familyi={R\bibinitperiod},
+           given={Muhammad\bibnamedelima Zubair},
+           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{4550db2f229ea9a37b41a958114d2177}
+      \strng{fullhash}{ef5492b6d17061811a96de55a903500c}
+      \strng{bibnamehash}{ef5492b6d17061811a96de55a903500c}
+      \strng{authorbibnamehash}{ef5492b6d17061811a96de55a903500c}
+      \strng{authornamehash}{4550db2f229ea9a37b41a958114d2177}
+      \strng{authorfullhash}{ef5492b6d17061811a96de55a903500c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Electronics}
+      \field{number}{3}
+      \field{title}{Facial Image Encryption for Secure Face Recognition System}
+      \field{volume}{12}
+      \field{year}{2023}
+      \field{pages}{774}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/electronics12030774
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/12/3/774
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/12/3/774
+      \endverb
+    \endentry
+    \entry{ding2021winggate}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=488de293954e0f034e47e170c74f790f}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{488de293954e0f034e47e170c74f790f}
+      \strng{fullhash}{488de293954e0f034e47e170c74f790f}
+      \strng{bibnamehash}{488de293954e0f034e47e170c74f790f}
+      \strng{authorbibnamehash}{488de293954e0f034e47e170c74f790f}
+      \strng{authornamehash}{488de293954e0f034e47e170c74f790f}
+      \strng{authorfullhash}{488de293954e0f034e47e170c74f790f}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Science and Technology for the Built Environment}
+      \field{note}{Diakses pada 1 Desember 2025}
+      \field{number}{10}
+      \field{title}{Influences of wing gate turnstiles' characteristics on pedestrian evacuation performance}
+      \field{volume}{27}
+      \field{year}{2021}
+      \field{pages}{1309\bibrangedash 1321}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1177/00368504211018058
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/full/10.1177/00368504211018058
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/full/10.1177/00368504211018058
+      \endverb
+    \endentry
+    \entry{iso19795}{standard}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7058e4bd76f877c52b621c942b30613c}{%
+           family={{International Organization for Standardization}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Geneva, Switzerland}%
+      }
+      \strng{namehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{bibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
+      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ISO/IEC 19795-1:2021 Information technology -- Biometric performance testing and reporting -- Part 1: Principles and framework}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.iso.org/standard/73515.html
+      \endverb
+      \verb{url}
+      \verb https://www.iso.org/standard/73515.html
+      \endverb
+    \endentry
+    \entry{Jadhav_2024}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b3e8254d07050047d71464cb12af7074}{%
+           family={Jadhav},
+           familyi={J\bibinitperiod},
+           given={Abhishek},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b3e8254d07050047d71464cb12af7074}
+      \strng{fullhash}{b3e8254d07050047d71464cb12af7074}
+      \strng{bibnamehash}{b3e8254d07050047d71464cb12af7074}
+      \strng{authorbibnamehash}{b3e8254d07050047d71464cb12af7074}
+      \strng{authornamehash}{b3e8254d07050047d71464cb12af7074}
+      \strng{authorfullhash}{b3e8254d07050047d71464cb12af7074}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.biometricupdate.com/202407/2-in-5-businesses-now-use-biometrics-for-physical-access-control-hid}}
+      \field{note}{Diakses pada 30 November 2025}
+      \field{title}{2 in 5 Businesses Now Use Biometrics for Physical Access Control: HID}
+      \field{year}{2024}
+    \endentry
+    \entry{pup_r14_2017}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df79c73670c79dac5a66489ada6ed039}{%
+           family={{Kementerian Pekerjaan Umum dan Perumahan Rakyat}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{df79c73670c79dac5a66489ada6ed039}
+      \strng{fullhash}{df79c73670c79dac5a66489ada6ed039}
+      \strng{bibnamehash}{df79c73670c79dac5a66489ada6ed039}
+      \strng{authorbibnamehash}{df79c73670c79dac5a66489ada6ed039}
+      \strng{authornamehash}{df79c73670c79dac5a66489ada6ed039}
+      \strng{authorfullhash}{df79c73670c79dac5a66489ada6ed039}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://peraturan.bpk.go.id/Details/104477/permen-pupr-no-14prtm2017-tahun-2017}}
+      \field{note}{Diakses pada 01 Desember 2025}
+      \field{title}{Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 14/PRT/M/2017 Tahun 2017 tentang Persyaratan Kemudahan Bangunan Gedung}
+      \field{year}{2017}
+    \endentry
     \entry{kemenpupr2023}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=df79c73670c79dac5a66489ada6ed039}{%
@@ -34,7 +212,7 @@
       \strng{authorbibnamehash}{df79c73670c79dac5a66489ada6ed039}
       \strng{authornamehash}{df79c73670c79dac5a66489ada6ed039}
       \strng{authorfullhash}{df79c73670c79dac5a66489ada6ed039}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -60,7 +238,7 @@
       \strng{authorbibnamehash}{df79c73670c79dac5a66489ada6ed039}
       \strng{authornamehash}{df79c73670c79dac5a66489ada6ed039}
       \strng{authorfullhash}{df79c73670c79dac5a66489ada6ed039}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -70,6 +248,76 @@
       \field{howpublished}{Surat Edaran Menteri}
       \field{title}{Surat Edaran Menteri PUPR Nomor 22/SE/M/2024 tentang Pedoman Penilaian Kinerja Bangunan Gedung Cerdas}
       \field{year}{2024}
+    \endentry
+    \entry{li2024handbook_face_recognition}{book}{}
+      \name{editor}{3}{}{%
+        {{un=0,uniquepart=base,hash=bdcfe781c06e01fe86f42230e738c1b4}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Stan\bibnamedelima Z.},
+           giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd01587a47d1084d2adebe55a57d1c5c}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Anil\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ead2c77e3080af378f5abe533067479}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Jiankang},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Cham}%
+      }
+      \strng{namehash}{25dd373ec0e2c621bc1f8d0b1cda3bf4}
+      \strng{fullhash}{25dd373ec0e2c621bc1f8d0b1cda3bf4}
+      \strng{bibnamehash}{25dd373ec0e2c621bc1f8d0b1cda3bf4}
+      \strng{editorbibnamehash}{25dd373ec0e2c621bc1f8d0b1cda3bf4}
+      \strng{editornamehash}{25dd373ec0e2c621bc1f8d0b1cda3bf4}
+      \strng{editorfullhash}{25dd373ec0e2c621bc1f8d0b1cda3bf4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{isbn}{978-3-031-43567-6}
+      \field{title}{Handbook of Face Recognition}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1007/978-3-031-43567-6
+      \endverb
+    \endentry
+    \entry{Plattner_2010}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=06532fdd8e4deefd635af65774c6cf2b}{%
+           family={Plattner},
+           familyi={P\bibinitperiod},
+           given={Hasso},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{06532fdd8e4deefd635af65774c6cf2b}
+      \strng{fullhash}{06532fdd8e4deefd635af65774c6cf2b}
+      \strng{bibnamehash}{06532fdd8e4deefd635af65774c6cf2b}
+      \strng{authorbibnamehash}{06532fdd8e4deefd635af65774c6cf2b}
+      \strng{authornamehash}{06532fdd8e4deefd635af65774c6cf2b}
+      \strng{authorfullhash}{06532fdd8e4deefd635af65774c6cf2b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://web.stanford.edu/~mshanks/MichaelShanks/files/509554.pdf}}
+      \field{note}{Diakses pada 3 Desember 2025}
+      \field{title}{An Introduction to Design Thinking Process Guide}
+      \field{year}{2010}
     \endentry
     \entry{wang2023accesscontrol}{article}{}
       \name{author}{3}{}{%
@@ -105,6 +353,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{author}
       \field{journaltitle}{Sensors}
+      \field{note}{Diakses pada 1 Desember 2025}
       \field{number}{4}
       \field{title}{Access Control for IoT: A Survey of Existing Research, Dynamic Policies and Future Directions}
       \field{volume}{23}
@@ -114,15 +363,11 @@
       \verb{doi}
       \verb 10.3390/s23041805
       \endverb
-      \verb{urlraw}
-      \verb https://www.mdpi.com/1424-8220/23/4/1805
-      \endverb
-      \verb{url}
-      \verb https://www.mdpi.com/1424-8220/23/4/1805
-      \endverb
     \endentry
   \enddatalist
   \missing{kainz2019raspberry}
+  \missing{nielsen1994usability}
+  \missing{pressman2014software}
   \missing{raspberrypi}
   \missing{simarmata2021gerbang}
 \endrefsection

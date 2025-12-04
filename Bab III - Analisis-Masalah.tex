@@ -7,18 +7,83 @@
 \chapter{ANALISIS MASALAH}
 \label{chap:analisis-masalah}
 \section{Analisis Kondisi Saat Ini}
-Menurut \textcite{laudon2020}, gambarkan terlebih dahulu model konseptual sistem yang ada saat ini. Model konseptual ini berisi berbagai komponen atau subsitem dan interaksi antarsubsistem tersebut. Setelah itu, berikan penjelasan tentang masalah yang ada pada sistem tersebut. Paragraf berikut berisi contoh penjabaran masalah sistem informasi fasilitas kesehatan untuk pasien \autocite{pressman2019}. 
+Tahap ini bertujuan untuk memahami kondisi aktual terkait alur kedatangan tamu di Gedung ITB Innovation Park serta kendala yang muncul dalam proses operasionalnya.
+Berdasarkan hasil observasi lapangan dan wawancara dengan petugas keamanan dan resepsionis, dapat disimpulkan bahwa sistem kontrol akses untuk tamu saat ini masih sepenuhnya manual dan belum terintegrasi dengan sistem manajemen gedung.
+\subsection{Alur Masuk Tamu Saat Ini}
+Proses penerimaan tamu saat ini mengandalkan interaksi langsung dengan petugas resepsionis atau petugas keamanan. Alur yang berlangsung di lapangan adalah sebagai berikut:
+\begin{enumerate}
+    \item Tamu memasuki lobi dan langsung berinteraksi dengan petugas keamanan. Petugas menanyakan keperluan tamu, identitas, serta pihak yang ingin ditemui. Proses verifikasi dilakukan secara verbal tanpa pencocokan dokumen atau identitas digital apa pun
+    \item Tidak ada sistem registrasi atau pencatatan tamu yang terpusat. Petugas keamanan hanya melakukan konfirmasi secara manual kepada tenant atau staf terkait melalui pesan singkat atau panggilan telepon untuk memastikan bahwa tamu tersebut memang memiliki janji atau terdapat kebutuhan kunjungan.
+    \item Tamu diperbolehkan melanjutkan ke area lift tanpa mekanisme autentikasi tambahan. Seluruh tamu dapat mengakses area lift setelah mendapatkan persetujuan verbal dari petugas keamanan.
+    \item Tidak ada pencatatan waktu masuk dan keluar. Aktivitas tamu tidak terdokumentasi, sehingga tidak ada data historis yang dapat digunakan untuk kebutuhan audit keamanan, monitoring, atau analisis operasional.
+\end{enumerate}
+
+Alur ini menunjukkan bahwa seluruh proses penerimaan tamu sangat bergantung pada komunikasi informal dan pengawasan manual oleh resepsionis. Ketergantungan pada proses manual ini menimbulkan sejumlah risiko, antara lain keterbatasan akurasi verifikasi identitas, potensi akses tanpa izin saat petugas lengah, serta tidak tersedianya data kunjungan untuk evaluasi keamanan gedung.
+\subsection{Kondisi Lobby Saat Ini}
+Hasil peninjauan area lobi menunjukkan bahwa gedung belum dilengkapi dengan perangkat pendukung sistem kontrol akses apa pun. Akses menuju lift terbuka secara langsung dari area lobi, hanya diawasi oleh petugas resepsionis. Ketiadaan infrastruktur ini mengakibatkan seluruh proses penyaringan tamu harus dilakukan secara manual dan tidak memiliki \textit{backup} sistemik apabila petugas tidak berada di tempat atau terjadi gangguan operasional.
 \section{Analisis Kebutuhan}
-\lipsum[4]
+Tahap ini bertujuan untuk mengidentifikasi kebutuhan yang harus dipenuhi dalam pengembangan sistem kontrol akses di Gedung ITB Innovation Park. Analisis dilakukan dengan memperhatikan kondisi operasional saat ini, pola interaksi antara tamu dan petugas, serta kebutuhan pengelola gedung terhadap keamanan dan efisiensi. Hasil analisis kebutuhan ini menjadi dasar dalam menentukan fitur, komponen, dan alur sistem yang akan dikembangkan.
 \subsection{Identifikasi Masalah Pengguna}
-\lipsum[5]
+Berdasarkan hasil observasi di lobi Gedung ITB Innovation Park, proses pengaturan tamu yang berkunjung menunjukkan sejumlah permasalahan yang memengaruhi efisiensi dan keamanan operasional. Tamu yang datang belum memiliki alur registrasi yang jelas dan terstruktur, sehingga verifikasi identitas sangat bergantung pada percakapan langsung dengan resepsionis. Kondisi ini menyebabkan alur masuk yang tidak konsisten dan rentan menimbulkan antrean pada jam sibuk. Selain itu, ketiadaan sistem pencatatan kunjungan membuat aktivitas tamu tidak terdokumentasi, sehingga menyulitkan pengelola gedung dalam melakukan penelusuran dan audit keamanan. Pengguna gedung, baik resepsionis maupun pengelola, juga tidak memiliki alat bantu untuk mengontrol area mana saja yang boleh diakses tamu maupun jangka waktu kunjungannya. Permasalahan tersebut menunjukkan perlunya sistem yang dapat mengatur proses kunjungan tamu secara lebih tertib, aman, dan terdigitalisasi.
 \subsection{Kebutuhan Fungsional}
-\lipsum[6]
+xxx
+\input{table/fungsionalReq.tex}
+Kebutuhan fungsional merupakan fitur atau fungsi utama yang harus dimiliki oleh sistem agar dapat memenuhi kebutuhan pengguna dan menyelesaikan permasalahan yang telah diidentifikasi pada subbab sebelumnya.
+Rincian kebutuhan nonfungsional disajikan pada tabel \ref{tbl:func-req}.
 \subsection{Kebutuhan Nonfungsional}
-\lipsum[7]
+Rincian kebutuhan nonfungsional disajikan pada tabel \ref{tbl:nonfunc-req}.
+\input{table/nonfungsionalReq.tex}
 
 \section{Analisis Pemilihan Solusi}
+Setelah kebutuhan sistem ditetapkan, tahap berikutnya adalah mengevaluasi berbagai pilihan solusi yang dapat memenuhi kebutuhan tersebut.
+Setiap alternatif akan dianalisis dan dibandingkan melalui pendekatan \textit{trade-off} untuk menentukan opsi yang paling sesuai dengan tujuan pengembangan sistem.
 \subsection{Alternatif Solusi}
-\lipsum[8]
+Berikut merupakan rangkuman alternatif solusi yang dapat digunakan untuk memenuhi masing-masing kebutuhan fungsional dari sistem.
+\begin{enumerate}
+    \item KF-01 Kontrol Akses
+    \begin{enumerate}[a.]
+        \item \textit{Swing Barrier}, yaitu tipe gerbang yang membuka dan menutup ke arah dalam atau luar.
+        \item \textit{Flap Barrier}, yaitu tipe gerbang yang membuka dan menutup dengan menggeser penghalang ke arah samping.
+        \item \textit{Tripod Gate}, yaitu tipe gerbang dengan 3 batang besi yang dapat berputar searah saat kunci terbuka.
+    \end{enumerate}
+
+    \item KF-02 Pendeteksi Wajah
+    \begin{enumerate}[a.]
+        \item \textit{Face recognition}, yaitu teknologi autentikasi dengan mendeteksi dan mengenali wajah pengguna.
+        \item RFID (\textit{Radio Frequency Identifier}), yaitu teknologi autentikasi yang menggunakan kartu yang memancarkan radio frekuensi tertentu.
+        \item Sidik jari, yaitu teknologi autentikasi yang memanfaatkan keunikan pola jari manusia untuk mengenali pengguna.
+        \item RFID + Pengenalan Wajah, gabungan dari teknologi pengenalan wajah dan RFID untuk melengkapi kelebihan dan kekurangan masing-masing.
+    \end{enumerate}
+
+    \item KF-03 Pengenalan Wajah
+    \begin{enumerate}[a.]
+        \item \textit{Face recognition}, yaitu teknologi autentikasi dengan mendeteksi dan mengenali wajah pengguna.
+        \item RFID (\textit{Radio Frequency Identifier}), yaitu teknologi autentikasi yang menggunakan kartu yang memancarkan radio frekuensi tertentu.
+        \item Sidik jari, yaitu teknologi autentikasi yang memanfaatkan keunikan pola jari manusia untuk mengenali pengguna.
+        \item RFID + Pengenalan Wajah, gabungan dari teknologi pengenalan wajah dan RFID untuk melengkapi kelebihan dan kekurangan masing-masing.
+    \end{enumerate}
+
+    \item KF-04 Manajemen Data
+    \begin{enumerate}[a.]
+        \item Aplikasi Web, menggunakan website yang dapat diakses melalui browser untuk pendaftaran.
+        \item Aplikasi Desktop, menggunakan aplikasi berbasis desktop untuk perangkat PC resepsionis.
+        \item Aplikasi Mobile, menggunakan aplikasi berbasis mobile untuk ponsel pengguna.
+    \end{enumerate}
+
+    \item KF-05 Integrasi Sistem
+    \begin{enumerate}[a.]
+        \item Integrasi berbasis API
+        \item Integrasi berbasis \textit{Message Queue}
+        \item Integrasi berbasis \textit{Webhook}
+    \end{enumerate}
+
+    \item KF-06 Keselamatan/\textit{safety}
+    \begin{enumerate}[a.]
+        \item Gerbang \textit{fail-safe}, yaitu gerbang yang memiliki kondisi terbuka saat tidak mendapatkan aliran listrik.
+        \item Tombol Darurat, yaitu tombol yang dapat membuka gerbang tanpa autentikasi.
+        \item Gerbang \textit{fail-safe} + Tombol Darurat, yaitu penggabungan solusi yang memungkinkan gerbang terbuka saat listrik padam atau tombol ditekan.
+    \end{enumerate}
+
+\end{enumerate}
 \subsection{Analisis Penentuan Solusi}
 \lipsum[9]

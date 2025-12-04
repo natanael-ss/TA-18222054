@@ -5,34 +5,107 @@
 \label{chap:pendahuluan}
 % --- Latar Belakang ---
 \section{Latar Belakang}
-Latar Belakang menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tugas akhir. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di puskesmas daerah pedesaan dan masalah yang dihadapi.
-\item	Berbagai solusi yang telah diterapkan atau solusi yang tersedia dan memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut.
-\end{enumerate}
+Pengelolaan keamanan pada bangunan cerdas merupakan aspek yang penting untuk memastikan aktivitas di dalam gedung berlangsung dengan aman, tertib, dan efisien.
+Sistem kontrol digunakan akses oleh karyawan sebagai pengguna tetap gedung dan bagi tamu atau pengunjung yang memiliki tujuan dan durasi kunjungan yang beragam.
+Sistem kontrol akses yang baik harus mampu mengidentifikasi pengguna gedung secara tepat, mencatat aktivitas keluar-masuk secara otomatis, serta mengelola akses antar-area di dalam gedung dengan aman.
+
+Science Techno Park (STP) Gedebage, yang juga dikenal sebagai ITB Innovation Park (IIP) Bandung Technopolis, merupakan fasilitas yang dibangun untuk mendukung inovasi serta komersialisasi berbagai produk teknologi milik Institut Teknologi Bandung (ITB).
+Saat ini, proses kontrol akses bagi tamu pada gedung ITB Innovation Park (IIP) masih dilakukan secara manual oleh petugas keamanan.
+Tamu yang datang akan diminta memberikan informasi mengenai tujuan kunjungan dan kemudian diarahkan untuk masuk ke gedung.
+Proses ini memiliki beberapa kelemahan.
+Pertama, pencatatan identitas dan aktivitas kunjungan masih bersifat manual dan tidak terdokumentasi secara otomatis.
+Kedua, keputusan pemberian akses bergantung pada penilaian petugas sehingga rawan subjektivitas.
+Ketiga, sistem akses tamu saat ini belum terintegrasi dengan sistem manajemen gedung secara menyeluruh.
+Kondisi ini belum memenuhi kriteria bangunan cerdas yang mengutamakan sistem kontrol akses yang otomatis dan terintegrasi.
+
+Kebutuhan akan kontrol akses sebagai salah satu elemen utama bangunan cerdas telah tertuang dalam regulasi pemerintah.
+Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 10 Tahun 2023 menetapkan bahwa kontrol akses merupakan salah satu komponen wajib dalam konsep Bangunan Gedung Cerdas (BGC).
+Selain itu, Surat Edaran Menteri Pekerjaan Umum Nomor 22/SE/M/2024 tentang Pedoman Penilaian Kinerja Bangunan Gedung Cerdas Tahap Pemanfaatan dan Pemeriksaan Kinerja Bangunan Gedung Cerdas Tahap Pembongkaran menyebutkan bahwa keandalan sistem kontrol akses menjadi salah satu parameter kinerja yang wajib dipenuhi dalam evaluasi bangunan cerdas.
+Regulasi tersebut menekankan bahwa sistem kontrol akses harus mampu memberikan pencatatan dan pengelolaan data pergerakan orang di dalam gedung secara aman dan terintegrasi dengan sistem manajemen gedung lainnya.
+
+Berbagai institusi dan organisasi telah menerapkan solusi teknologi kontrol akses menggunakan RFID, QR code, hingga pengenalan wajah (\textit{face recognition}).
+Teknologi pengenalan wajah menawarkan keunggulan berupa otomatisasi, peningkatan keamanan, pengurangan interaksi fisik, dan kecepatan verifikasi pengguna.
+Namun dalam konteks tamu, penerapan pengenalan wajah memiliki pertimbangan tambahan seperti aspek privasi dan risiko penggunaan data biometrik.
+Hal ini selaras dengan prinsip perlindungan data pribadi sebagaimana diatur dalam Undang-Undang Perlindungan Data Pribadi di Indonesia, yang mengatur bahwa pengumpulan dan pemrosesan data biometrik membutuhkan persetujuan dari pemilik data.
+Oleh karena itu, sistem kontrol akses pada bangunan cerdas perlu menyediakan alternatif metode autentikasi bagi tamu yang tidak bersedia atau tidak memungkinkan untuk memberikan data biometriknya.
+
+Untuk menjawab kebutuhan tersebut, diperlukan sistem kontrol akses tamu yang fleksibel dan dapat mengakomodasi dua metode autentikasi, yaitu pengenalan wajah dan peminjaman kartu akses RFID melalui proses verifikasi identitas di resepsionis.
+Dengan pendekatan ini, proses kontrol akses tamu dapat dilakukan secara lebih aman, otomatis, terdokumentasi dengan baik, serta tetap menghormati pilihan dan privasi tamu.
+Pengembangan sistem ini diharapkan dapat meningkatkan keamanan dan efisiensi operasional gedung, sekaligus selaras dengan regulasi mengenai standar bangunan gedung cerdas.
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Rumusan Masalah berisi masalah utama yang dibahas dalam tugas akhir. Rumusan masalah yang baik memiliki struktur sebagai berikut:
+Saat ini, proses kontrol akses bagi tamu yang memasuki Gedung ITB Innovation Park belum dilakukan secara otomatis dan belum terintegrasi dengan sistem manajemen gedung.
+Pencatatan identitas dan aktivitas kunjungan masih dilakukan secara manual oleh petugas keamanan atau resepsionis sehingga berpotensi menimbulkan ketidaktepatan pencatatan, risiko keamanan, dan ketidakefisienan dalam pengelolaan arus tamu.
+Proses pemberian akses masih bertumpu pada subjektivitas petugas dan belum memenuhi standar sistem kontrol akses pada bangunan cerdas.
+
+Jika masalah tersebut tidak diatasi, maka risiko keamanan, ketidakteraturan alur kunjungan, serta ketidakpatuhan terhadap standar bangunan cerdas akan tetap terjadi.
+Selain itu, proses verifikasi tamu yang tidak otomatis dapat menyebabkan antrean, ketidakefisienan waktu, serta kurangnya dokumentasi aktivitas kunjungan sebagai bagian dari pengelolaan bangunan cerdas.
+
+Oleh karena itu, diperlukan sistem kontrol akses yang mampu melakukan identifikasi dan pencatatan tamu secara otomatis serta tetap memperhatikan aspek keamanan dan perlindungan data pribadi.
+Masalah tersebut dapat dirumuskan sebagai berikut:
 \begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
+\item	Bagaimana merancang sistem kontrol akses berbasis pengenalan wajah pada Gedung ITB Innovation Park?
+\item   Bagaimana menyediakan mekanisme autentikasi alternatif bagi tamu tanpa mengabaikan aspek keamanan dan perlindungan data pribadi?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
-Tuliskan tujuan utama dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tugas akhir. Fokuskan pada hasil akhir yang ingin diperoleh setelah tugas akhir diselesaikan, terkait dengan penyelesaian persoalan pada rumusan masalah. Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di akhir pelaksanaan tugas akhir apakah tercapai atau tidak. Tuliskan kriteria keberhasilan tugas akhir ini.
+Tujuan dari tugas akhir ini adalah mengembangkan sistem kontrol akses untuk mendukung pengelolaan tamu pada bangunan cerdas.
+Sistem ini diharapkan dapat meningkatkan keamanan dan efisiensi pengelolaan kunjungan tamu serta menyediakan opsi autentikasi yang sesuai dengan kebutuhan operasional gedung.
 
+Secara khusus, tujuan tugas akhir ini adalah:
+\begin{enumerate}
+\item	Mengembangkan sistem kontrol akses tamu yang mampu melakukan identifikasi dan pencatatan kunjungan secara otomatis pada bangunan cerdas.
+\item   Merancang mekanisme autentikasi alternatif bagi tamu tanpa mengabaikan aspek keamanan dan perlindungan data pribadi.
+\end{enumerate}
+
+Tugas akhir ini dinyatakan berhasil apabila memenuhi kriteria berikut:
+\begin{enumerate}
+\item   XX
+\item   XX
+\end{enumerate}
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
-Tuliskan batasan-batasan yang diambil dalam pelaksanaan tugas akhir. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tugas akhir dibuat cukup spesifik.
-
+Untuk menjaga ruang lingkup pembahasan dan memastikan solusi yang dikembangkan tetap fokus serta dapat dicapai dalam rentang waktu pengerjaan tugas akhir, maka diperlukan batasan-batasan masalah sebagai berikut:
+\begin{enumerate}
+\item   Tugas akhir ini dikerjakan secara berkelompok yang terdiri dari 3 orang mahasiswa, yaitu Axelius Davin dengan NIM 18222016, Muhammad Rifa Ansyari dengan NIM 18222004, dan Natanael Steven dengan NIM 18222054.
+Penulis dalam hal ini berfokus pada pengembangan sistem kontrol akses untuk manajemen tamu.
+\item   Pengguna sistem yang dilibatkan adalah pihak pengelola gedung IIP beserta salah satu perusahaan yang menggunakan gedung IIP.
+\item   Sistem yang dikembangkan hanya mencakup satu unit gerbang sesuai ketersediaan sumber daya, namun dirancang dan dikembangkan sebagai representasi dari keseluruhan sistem.
+\item   Sistem akan dikembangkan menggunakan basis data independen yang tidak terintegrasi langsung dengan data yang dimiliki gedung.
+\end{enumerate}
 % --- Metodologi Pengerjaan TA ---
 \section{Metodologi}
-Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. Khusus untuk penyusunan proposal ini, jelaskan secara detail:
+Metodologi yang digunakan dalam tugas akhir ini mengacu pada pendekatan \textit{design thinking}.
+\textit{Design thinking} merupakan metode pengembangan sistem yang bersifat iteratif, berpusat pada pengguna (\textit{human-centered}), serta menekankan proses kolaborasi dengan pihak yang terlibat.
+Pendekatan ini membantu menghasilkan solusi yang relevan dengan kebutuhan operasional gedung dan perilaku pengguna dalam proses kontrol akses tamu.
+\textit{Design thinking} terdiri atas lima tahapan utama, yaitu \textit{Empathize}, \textit{Define}, \textit{Ideate}, \textit{Prototype}, dan \textit{Test}.
 \begin{enumerate}
-\item	Tahapan investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Langkah-langkah pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara sistematis di Bab II Studi Literatur.
+\item \textit{Empathize}
+Tahap ini bertujuan memahami kebutuhan pengguna dan permasalahan yang terjadi pada proses kontrol akses tamu.
+Informasi dikumpulkan melalui observasi langsung ke gedung IIP, wawancara, dan interaksi langsung dengan pengguna sistem seperti pengelola harian gedung.
+Data yang diperoleh menjadi dasar untuk merumuskan kasus nyata di lapangan.
+\item \textit{Define} 
+Pada tahap ini, temuan dari proses \textit{empathize} dianalisis untuk mengidentifikasi kendala utama dan karakteristik pengguna.
+Data yang diperoleh diolah untuk membangun \textit{problem statement} yang spesifik dan terukur sebagai dasar dalam merancang sistem kontrol akses tamu yang akan dikembangkan.
+\item \textit{Ideate} 
+Tahap ini berfokus pada eksplorasi ide-ide solusi berdasarkan masalah yang telah didefinisikan.
+Pengembang dapat menggunakan teknik seperti \textit{brainstorming, sketching}, atau simulasi alur sistem untuk menghasilkan berbagai alternatif solusi dalam pengelolaan akses tamu.
+\item \textit{Prototype} 
+Tahap ini bertujuan mewujudkan ide menjadi bentuk nyata menggunakan komponen perangkat keras maupun perangkat lunak.
+Prototipe dirancang untuk mengevaluasi solusi yang diusulkan dan melihat bagaimana sistem kontrol akses bekerja dalam skenario operasional.
+Tujuan utama bukan menghasilkan produk final, tetapi sebagai sarana evaluasi awal dan eksplorasi desain.
+\item \textit{Test} 
+Tahap ini dilakukan untuk mengevaluasi prototipe melalui uji coba, pengamatan, serta penerimaan umpan balik dari pengguna sistem.
+Hasil evaluasi kemudian digunakan untuk menyempurnakan solusi, merumuskan ulang kebutuhan, atau memperbaiki desain sistem agar lebih sesuai dengan kondisi operasional gedung.
 \end{enumerate}
+
+Selain itu, metode penelusuran literatur juga digunakan dalam pengembangan sistem ini, yang mencakup:
+\begin{enumerate}
+\item Literatur ilmiah seperti buku dan artikel untuk mempelajari konsep dasar kontrol akses.
+\item Regulasi pemerintah terkait Bangunan Gedung, Bangunan Gedung Cerdas, kontrol akses, serta perlindungan data pribadi.
+\item Jurnal ilmiah dalam lima tahun terakhir untuk mengidentifikasi solusi dan celah penelitian yang relevan dengan sistem kontrol akses tamu.
+\end{enumerate}
+
+Dokumentasi data yang digunakan meliputi foto, data kunjungan, serta catatan hasil observasi dan wawancara.

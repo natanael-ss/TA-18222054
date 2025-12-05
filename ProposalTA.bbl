@@ -19,65 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global}
-    \entry{abusham2023facial}{article}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=7cf62fa01ab08153951e535098553ebb}{%
-           family={Abusham},
-           familyi={A\bibinitperiod},
-           given={Eimad\bibnamedelima Abdu},
-           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ba91e3b2de939697569fb81dd22cff1d}{%
-           family={Ibrahim},
-           familyi={I\bibinitperiod},
-           given={Basil},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a98253a27a9681ca7659af4f4c5e23cb}{%
-           family={Zia},
-           familyi={Z\bibinitperiod},
-           given={Kashif},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a176fedc9aadd8cdfd9e362284928c3f}{%
-           family={Rehman},
-           familyi={R\bibinitperiod},
-           given={Muhammad\bibnamedelima Zubair},
-           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {MDPI}%
-      }
-      \strng{namehash}{4550db2f229ea9a37b41a958114d2177}
-      \strng{fullhash}{ef5492b6d17061811a96de55a903500c}
-      \strng{bibnamehash}{ef5492b6d17061811a96de55a903500c}
-      \strng{authorbibnamehash}{ef5492b6d17061811a96de55a903500c}
-      \strng{authornamehash}{4550db2f229ea9a37b41a958114d2177}
-      \strng{authorfullhash}{ef5492b6d17061811a96de55a903500c}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{author}
-      \field{journaltitle}{Electronics}
-      \field{number}{3}
-      \field{title}{Facial Image Encryption for Secure Face Recognition System}
-      \field{volume}{12}
-      \field{year}{2023}
-      \field{pages}{774}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/electronics12030774
-      \endverb
-      \verb{urlraw}
-      \verb https://www.mdpi.com/2079-9292/12/3/774
-      \endverb
-      \verb{url}
-      \verb https://www.mdpi.com/2079-9292/12/3/774
-      \endverb
-    \endentry
     \entry{iso19795}{standard}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7058e4bd76f877c52b621c942b30613c}{%

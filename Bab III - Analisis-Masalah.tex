@@ -19,7 +19,7 @@ Proses penerimaan tamu saat ini mengandalkan interaksi langsung dengan petugas r
 \end{enumerate}
 
 Alur ini menunjukkan bahwa seluruh proses penerimaan tamu sangat bergantung pada komunikasi informal dan pengawasan manual oleh resepsionis. Ketergantungan pada proses manual ini menimbulkan sejumlah risiko, antara lain keterbatasan akurasi verifikasi identitas, potensi akses tanpa izin saat petugas lengah, serta tidak tersedianya data kunjungan untuk evaluasi keamanan gedung.
-\subsection{Kondisi Lobby Saat Ini}
+\subsection{Kondisi Lobi Saat Ini}
 Hasil peninjauan area lobi menunjukkan bahwa gedung belum dilengkapi dengan perangkat pendukung sistem kontrol akses apa pun.
 Akses menuju lift terbuka secara langsung dari area lobi, hanya diawasi oleh petugas keamanan.
 Tidak adanya sistem kontrol akses mengakibatkan seluruh proses penyaringan tamu harus dilakukan secara manual dan tidak memiliki \textit{backup} apabila petugas tidak berada di tempat. 
@@ -114,13 +114,14 @@ Berikut merupakan kriteria penilaian dari fungsionalitas kontrol akses.
 Berdasarkan kriteria tersebut, berikut merupakan \textit{Weighted Scoring Model} dari setiap alternatif solusi.
 
 \input{table/wsm_fr1.tex}
-Analisis menunjukkan bahwa swing barrier merupakan solusi terbaik yang menawarkan keseimbangan antara keamanan, kecepatan, dan aksesibilitas yang baik dibandingkan dengan alternatif solusi lainnya.
+Analisis menunjukkan bahwa \textit{swing barrier} merupakan solusi terbaik yang menawarkan keseimbangan antara keamanan, kecepatan, dan aksesibilitas yang baik dibandingkan dengan alternatif solusi lainnya.
 
 \subsubsection{KF-2: Deteksi Wajah}
 Berikut merupakan kriteria penilaian dari fungsionalitas deteksi wajah.
 \input{table/wsm_fr2_criteria.tex}
 Berdasarkan kriteria tersebut, berikut merupakan \textit{Weighted Scoring Model} dari setiap alternatif solusi.
 \input{table/wsm_fr2.tex}
+Analisis menunjukkan bahwa YOLO-Face terpilih karena menawarkan performa paling seimbang untuk implementasi di Raspberry Pi.
 
 \subsubsection{KF-3: Pengenalan Wajah}
 Berikut merupakan kriteria penilaian dari fungsionalitas pengenalan wajah.
@@ -153,11 +154,4 @@ Berikut merupakan kriteria penilaian dari fungsionalitas integrasi sistem.
 \input{table/wsm_fr6_criteria.tex}
 Berdasarkan kriteria tersebut, berikut merupakan \textit{Weighted Scoring Model} dari setiap alternatif solusi.
 \input{table/wsm_fr6.tex} 
-Solusi kombinasi, yaitu gabungan dengan solusi otomatis(\textit{fail-safe}) dan tombol manual merupakan solusi terbaik pada sistem. Solusi ini memastikan aspek keselamatan yang mumpuni dengan keandalan, kepatuhan dan kecepatan respon yang tinggi.
-% \begin{enumerate}
-%     \item Kontrol Akses: \textit{Swing Barrier}
-%     \item Autentikasi: Kombinasi Pengenalan Wajah + RFID
-%     \item Manajemen Pendaftaran: Aplikasi Web
-%     \item Integrasi Sistem: Integrasi API
-%     \item Keselamatan/\textit{safety}: Kombinasi \textit{Fail-safe gate} + Tombol Darurat.
-% \end{enumerate}
+Solusi kombinasi, yaitu gabungan dengan solusi otomatis(\textit{fail-safe}) dan tombol daruat merupakan solusi terbaik pada sistem. Solusi ini memastikan aspek keselamatan yang mumpuni dengan keandalan, kepatuhan dan kecepatan respon yang tinggi.

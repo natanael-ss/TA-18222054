@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'ProposalTA.blg'
-[98] biber-MSWIN64:340> INFO - === 
-[133] Biber.pm:419> INFO - Reading 'ProposalTA.bcf'
-[305] Biber.pm:979> INFO - Found 14 citekeys in bib section 0
-[318] Biber.pm:4419> INFO - Processing section 0
-[329] Biber.pm:4610> INFO - Looking for bibtex file 'daftar-pustaka.bib' for section 0
-[397] bibtex.pm:1713> INFO - LaTeX decoding ...
-[446] bibtex.pm:1519> INFO - Found BibTeX data source 'daftar-pustaka.bib'
-[568] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
-[569] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[569] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
-[569] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'indonesian'
-[569] Biber.pm:4245> INFO - No sort tailoring available for locale 'indonesian'
-[587] bbl.pm:660> INFO - Writing 'ProposalTA.bbl' with encoding 'UTF-8'
-[593] bbl.pm:763> INFO - Output to ProposalTA.bbl
-[594] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\natan\AppData\Local\Temp\biber_tmp_YQHD\41ffe2d8d9a3f06b4c5a0f7a04e3d585_17960.utf8, line 153, warning: 7 characters of junk seen at toplevel
-[594] Biber.pm:133> INFO - WARNINGS: 1
+[137] biber-MSWIN64:340> INFO - === 
+[189] Biber.pm:419> INFO - Reading 'ProposalTA.bcf'
+[517] Biber.pm:979> INFO - Found 13 citekeys in bib section 0
+[548] Biber.pm:4419> INFO - Processing section 0
+[583] Biber.pm:4610> INFO - Looking for bibtex file 'daftar-pustaka.bib' for section 0
+[741] bibtex.pm:1713> INFO - LaTeX decoding ...
+[830] bibtex.pm:1519> INFO - Found BibTeX data source 'daftar-pustaka.bib'
+[1024] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1024] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
+[1024] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1024] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'indonesian'
+[1024] Biber.pm:4245> INFO - No sort tailoring available for locale 'indonesian'
+[1070] bbl.pm:660> INFO - Writing 'ProposalTA.bbl' with encoding 'UTF-8'
+[1082] bbl.pm:763> INFO - Output to ProposalTA.bbl
+[1083] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\natan\AppData\Local\Temp\biber_tmp_j3_J\41ffe2d8d9a3f06b4c5a0f7a04e3d585_14752.utf8, line 195, warning: 7 characters of junk seen at toplevel
+[1083] Biber.pm:133> INFO - WARNINGS: 1

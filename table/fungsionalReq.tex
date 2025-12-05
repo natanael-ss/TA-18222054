@@ -4,19 +4,21 @@
   \hline
   \textbf{Nama Kebutuhan}       & \textbf{Penjelasan} \\
   \hline
-  KF-01: Kontrol Akses                 & Sistem harus mampu mengoperasikan pembukaan dan penutupan gerbang fisik secara otomatis berdasarkan hasil validasi, sehingga akses ke area gedung dapat dibatasi sesuai izin yang diberikan. \\
+  KF-1: Kontrol Akses                 & Sistem harus mampu mengendalikan mekanisme pembatasan fisik (\textit{barrier}) untuk memblokir atau mengizinkan jalur akses berdasarkan hasil autentikasi. \\
   \hline
-  KF-02: Pendeteksi Wajah              & Sistem harus mampu \\
+  KF-2: Deteksi Wajah                 & Sistem harus dapat mendeteksi apakah terdapat wajah manusia di depan input kamera yang dimiliki sistem.\\
   \hline
-  KF-03: Pengenalan Wajah              & Sistem harus dapat mengenali dan memberikan akses kepada pengguna yang memiliki hak akses memasuki gedung. \\
+  KF-3: Pengenalan Wajah              & Sistem harus mampu membandingkan fitur unik subjek yang hadir dengan basis data terdaftar untuk melakukan verifikasi identitas. \\
   \hline
-  KF-04: Manajemen Data                & Pengguna sistem harus dapat mengakses sistem untuk menambahkan, mengubah atau menghapus data mereka yang digunakan dalam sistem.\\
+  KF-4: Manajemen Pendaftaran         & Sistem harus memiliki antarmuka yang terpusat untuk mengelola registrasi, hak akses, dan visualisasi catatan atau riwayat aktivitas pengguna.\\
   \hline
-  KF-05: Integrasi Sistem              & Sistem harus dapat melakukan sinkronasi data yang mereka miliki dengan Sistem Manajemen Gedung, dengan tetap memperhatikan regulasi yang berlaku.\\
+  KF-5: Integrasi Sistem              & Sistem harus mampu menerima dan mengirimkan informasi (data log, status akses, sinyal peringatan) dengan sistem informasi eksternal yang terhubung.\\
   \hline
-  KF-06: Keselamatan/\textit{safety}   & Sistem wajib memiliki fitur \textit{fail-safe} yang menjamin gerbang terbuka secara otomatis pada situasi darurat atau saat terjadi pemadaman daya. \\
+  KF-6: Keselamatan/\textit{safety}   & Sistem wajib memiliki mekanisme keselamatan saat terjadi kondisi darurat. \\
   \hline
+  
 \end{tabularx}
-\caption{Kebutuhan Fungsional Sistem}
+\caption{Kebutuhan fungsional sistem}
 \label{tbl:func-req}
 \end{table}
+

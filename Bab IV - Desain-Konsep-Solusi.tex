@@ -3,17 +3,24 @@
 % ==========================================
 \chapter{DESAIN KONSEP SOLUSI}
 \label{chap:desain-konsep-solusi}
-Fokus utama pada desain konsep solusi adalah menjelaskan model konseptual dan penjelasan desain yang dipilih pada bab sebelumnya mengenai pengenalan wajah untuk kontrol akses di lobi ITB Innovation Park.
+Tujuan dari bab desain konsep solusi adalah menjelaskan model konseptual dan uraian desain yang telah dipilih pada bab sebelumnya terkait penerapan sistem pengenalan wajah untuk kontrol akses di lobi ITB Innovation Park.
 \section{Diagram Konseptual}
-Penerapan desain solusi yang dipilih akan mempengaruhi alur kontrol akses yang telah ada sebelumnya. Gambar \ref{gambar:alur-before} adalah diagram alur kontrol akses sebelum penerapan sistem gerbang.
+Pada tahap ini dijelaskan gambaran konseptual mengenai perubahan alur kontrol akses yang terjadi setelah sistem baru diimplementasikan. Model konseptual ini bertujuan menunjukkan bagaimana proses operasional di lobi Gedung ITB Innovation Park (IIP) akan berubah dibandingkan dengan mekanisme sebelumnya. Penyajian diagram dilakukan untuk memudahkan pembaca memahami perbedaan aliran proses before dan after pemasangan gerbang otomatis berbasis pengenalan wajah serta metode autentikasi alternatif.
+
+Sebelum sistem dikembangkan, seluruh proses verifikasi identitas pengunjung, baik karyawan maupun tamu masih sepenuhnya dilakukan oleh petugas keamanan secara manual. Gambar \ref{gambar:alur-before} menampilkan alur kontrol akses lama, mulai dari kedatangan pengguna hingga diperbolehkan memasuki area lift.
 \begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
     	\includegraphics[width=0.7\textwidth]{image/alur-before.png}
 	\caption{Alur kontrol akses sebelum penerapan sistem gerbang}
 	\label{gambar:alur-before}
-\end{figure} 
-Gambar \ref{gambar:alur-after-karyawan} dan \ref{gambar:alur-after-tamu} merupakan alur kontrol akses sesudah penerapan sistem pada Gedung IIP. Dari gambar, dapat dilihat dengan jelas perubahan alur yang terjadi, dimana setelah melewati petugas keamanan luar gedung, karyawan dan tamu harus melewati sistem gerbang terlebih dahulu sebelum akhirnya dapat mengakses lift pada lobi gedung. 
+\end{figure}
+
+Setelah sistem dirancang dan dipilih pada bab sebelumnya, alur kontrol akses diperbarui menjadi lebih terstruktur dan otomatis.
+Untuk karyawan, proses autentikasi akan dilakukan menggunakan \textit{face recognition} sebagai metode utama. 
+Alur tersebut ditampilkan pada Gambar \ref{gambar:alur-after-karyawan}.
+Sementara itu, tamu memiliki dua pilihan autentikasi, yaitu menggunakan pengenalan wajah atau kartu RFID hasil verifikasi identitas di resepsionis.
+Ilustrasi alur ini ditampilkan pada Gambar \ref{gambar:alur-after-tamu}.
 \begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
@@ -28,7 +35,10 @@ Gambar \ref{gambar:alur-after-karyawan} dan \ref{gambar:alur-after-tamu} merupak
 	\caption{Alur kontrol akses sesudah penerapan sistem gerbang untuk tamu gedung}
 	\label{gambar:alur-after-tamu}
 \end{figure}
-Selain itu, sistem yang akan dikembangkan juga memiliki alur tambahan yang terjadi saat terjadi bencana. Gambar \ref{gambar:alur-after-darurat} menunjukkan bagaimana alur sistem saat terjadi keadaan darurat.
+
+Selain kedua alur tersebut, sistem juga dirancang untuk berfungsi secara aman pada kondisi darurat, misalnya saat terjadi kebakaran atau pemadaman listrik.
+Dalam skenario tersebut, gerbang akan masuk ke mode \textit{fail-safe} dan terbuka otomatis.
+Alur untuk kontrol akses saat kondisi darurat, ditampilkan pada Gambar \ref{gambar:alur-after-darurat}.
 \begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
@@ -36,7 +46,9 @@ Selain itu, sistem yang akan dikembangkan juga memiliki alur tambahan yang terja
 	\caption{Alur kontrol akses sesudah penerapan sistem gerbang saat kondisi darurat}
 	\label{gambar:alur-after-darurat}
 \end{figure}
-Selain perubahan alur, terdapat juga perubahan pada lobi gedung secara langsung akibat pemasangan sistem gerbang. Berikut merupakan gambaran denah dari lobi Gedung IIP sebelum dan sesudah pemasangan gerbang. Pemasangan gerbang direncanakan akan berbentuk siku, dengan pemasangan tiga buah gerbang normal (hijau) dan satu gerbang disabilitas (biru).
+
+Selain menggambarkan perubahan alur proses, model konseptual juga mencakup visualisasi tata letak lobi gedung sebelum dan sesudah pemasangan gerbang.
+Denah awal ditampilkan pada Gambar \ref{gambar:denah-sebelum}, sedangkan penempatan gerbang baru, yang terdiri dari tiga gerbang ditampilkan pada Gambar \ref{gambar:denah-sesudah-lurus}.
 \begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
@@ -47,30 +59,32 @@ Selain perubahan alur, terdapat juga perubahan pada lobi gedung secara langsung 
 \begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
-    	\includegraphics[width=0.7\textwidth]{image/denah-sesudah.png}
+    	\includegraphics[width=0.7\textwidth]{image/denah-sesudah-lurus.png}
 	\caption{Denah lobi setelah pemasangan sistem gerbang}
-	\label{gambar:denah-sesudah}
+	\label{gambar:denah-sesudah-lurus}
 \end{figure}
+
 \section{Penjelasan Desain}
-Bagian ini akan menjelaskan secara ringkas bagaimana rancangan sistem kontrol akses akan diimplementasikan. Penjelasan desain ini meliputi keterhubungan antarkomponen, penjelasan tentang komponen yang dipilih secara ringkas serta logika proses autentikasi.
+Bagian ini akan menjelaskan secara ringkas bagaimana rancangan sistem kontrol akses akan diimplementasikan. Penjelasan desain ini meliputi keterhubungan antarkomponen, penjelasan tentang komponen yang dipilih secara ringkas, logika proses autentikasi serta logika proses pendaftaran.
 \subsection{Spesifikasi Perangkat Keras}
-Secara fisik, sistem gerbang dirancang untuk memiliki tiga gerbang normal pada satu sisi dan satu gerbang disabiilitas untuk sisi lainnya, dengan gerbang disabilitas akan memiliki lebar gerbang yang lebih lebar (80 cm) dibandingkan dengan gerbang normal (60 cm). Gambar \ref{gambar:gerbang-normal} menunjukkan Topologi fisik dari gerbang normal yang akan dirancang.
+Gerbang bertipe \textit{swing barrier} dipilih untuk mendukung aksesibilitas yang luas, sesuai dengan standar keselamatan \parencite{simarmata2021gerbang}. Dalam implementasinya, Sistem dirancang akan memiliki tiga gerbang normal pada satu sisi dan satu gerbang disabiilitas untuk sisi lainnya, dengan gerbang disabilitas akan memiliki jalur minimal yang lebih lebar (80 cm) dibandingkan dengan gerbang normal (60 cm). Gambar \ref{gambar:dimensi-gerbang} menunjukkan dimensi dari gerbang yang akan digunakan.
 \begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
     	\includegraphics[width=1\textwidth]{image/gerbang-satuan.png}
-	\caption{Topologi fisik dari gerbang normal}
-	\label{gambar:gerbang-normal}
+	\caption{Dimensi dari \textit{swing barrier.}}
+	\label{gambar:dimensi-gerbang}
 \end{figure}
-Berdasarkan analisis kebutuhan pada Bab III dan diagram hubungan komponen di atas, spesifikasi perangkat keras yang dipilih meliputi:
+
+Gerbang yang akan digunakan kemudian akan terhubung langsung dengan sistem pengenalan wajah dan RFID, Berdasarkan analisis kebutuhan pada Bab III, spesifikasi perangkat keras yang dipilih meliputi:
 \begin{enumerate}
     \item \textbf{Unit Pemrosesan:} Raspberry Pi 4 Model B (4GB) dipilih karena kemampuan \textit{edge computing} yang memadai untuk menjalankan algoritma \textit{Deep Learning} \parencite{raspberrypi}.
     \item \textbf{Visual:} Raspberry Pi Camera Module v3 dengan fitur HDR untuk mengatasi kondisi pencahayaan lobi.
     \item \textbf{Antarmuka:} Layar LCD 5 inci HDMI untuk menampilkan status akses kepada pengguna.
-    \item \textbf{Autentikasi Sekunder:} Modul RFID Reader sebagai opsi akses cadangan.
+    \item \textbf{Autentikasi Sekunder:} Modul RFID \textit{Reader} sebagai opsi akses cadangan.
     \item \textbf{Kontrol Akses:} Modul Relay 5V untuk memicu pembukaan gerbang melalui mekanisme kontak kering (\textit{dry contact}) \parencite{kainz2019raspberry}.
 \end{enumerate}
-Selain itu, mekanisme fisik gerbang menggunakan \textit{Swing Barrier} untuk mendukung aksesibilitas yang luas, sesuai dengan standar keselamatan \parencite{simarmata2021gerbang}.
+Mekanisme fisik gerbang menggunakan \textit{Swing Barrier} untuk mendukung aksesibilitas yang luas, sesuai dengan standar keselamatan \parencite{simarmata2021gerbang}.
 \subsection{Diagram Komponen}
 Rancangan sistem kontrol akses ini akan terdiri dari beberapa komponen yang saling terhubung. Gambar \ref{gambar:hubungan-komponen} Menunjukkan diagram komponen dari sistem.
 \begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
@@ -80,11 +94,14 @@ Rancangan sistem kontrol akses ini akan terdiri dari beberapa komponen yang sali
 	\caption{Diagram komponen dari rancangan sistem}
 	\label{gambar:hubungan-komponen}
 \end{figure}
-Berdasarkan gambar, terlihat bahwa sistem kontrol akses dengan gerbang otomatis terdiri dari komponen yang ada pada pemilihan solusi yaitu gerbang, sistem pengenalan wajah (kamera, kontroler, display), sistem RFID (RFID Reader, Kontroler), Tombol darurat, serta komponen-komponen seperti sumber listrik untuk memastikan sistem bekerja sesuai dengan kebutuhan.
+Berdasarkan gambar, terlihat bahwa sistem kontrol akses dengan gerbang otomatis terdiri dari komponen yang ada pada pemilihan solusi yaitu gerbang, sistem pengenalan wajah (kamera, kontroler, \textit{display}), sistem RFID (RFID \textit{Reader}, Kontroler), Tombol darurat, serta komponen-komponen seperti sumber listrik untuk memastikan sistem bekerja sesuai dengan kebutuhan.
 
 \subsection{Logika Autentikasi}
 Logika autentikasi menjelaskan proses pengenalan pengguna yang dilakukan oleh sistem pengenalan wajah. Gambar \ref{gambar:logika-autentikasi} adalah alur proses dari proses pengenalan wajah untuk autentikasi pengguna. 
-\begin{figure}[ht] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+
+Setiap beberapa waktu, sistem akan mengambil \textit{frame} video melalui kamera, jika mendeteksi adanya wajah pada frame, sistem kemudian akan melakukan proses ekstrasi dari fitur wajah menjadi sebuah vektor. hasil ini kemudian dibandingkan dengan data tersimpan untuk mencari vektor terdekat. Jika tidak ditemukan, sistem akan menunjukkan bahwa akses masuk ditolak.
+
+\begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
     	\includegraphics[width=0.6\textwidth]{image/proses-autentikasi.png}
@@ -92,9 +109,15 @@ Logika autentikasi menjelaskan proses pengenalan pengguna yang dilakukan oleh si
 	\label{gambar:logika-autentikasi}
 \end{figure}
 
-Setiap beberapa waktu, sistem akan mengambil frame video melalui kamera, jika mendeteksi adanya wajah pada frame, sistem kemudian akan melakukan proses ekstrasi dari fitur wajah menjadi sebuah vektor. hasil ini kemudian dibandingkan dengan data tersimpan untuk mencari vektor terdekat. Jika tidak ditemukan, sistem akan menunjukkan bahwa akses masuk ditolak.
+Jika menemukan jarak vektor yang dibawah \textit{treshold}, sistem akan menampilkan akses diterima. Setelah itu, sistem akan mengambil data pengguna yang dikenali tersebut, lalu mencatat log akses dan membuka gerbang. Sistem kemudian akan menunggu beberapa saat sebelum akhirnya kembali mengambil \textit{frame} video untuk mendeteksi pengguna berikutnya.
 
-Jika sistem menemukan jarak vektor yang dibawah treshold, sistem akan menampilkan akses diterima. Setelah itu, sistem akan mengambil data pengguna yang dikenali tersebut, lalu mencatat log akses dan membuka gerbang. Sistem kemudian akan menunggu beberapa saat sebelum akhirnya kembali mengambil frame Video untuk mendeteksi pengguna berikutnya.
-
-\subsection{Alur Sistem Pendaftaran}
-\subsection{}
+\subsection{Alur Pendaftaran pada Sistem Kontrol Akses}
+Sistem pendaftaran digunakan oleh pengguna untuk mendaftarkan wajah mereka, sehingga pengguna dapat dikenali dan diberikan akses masuk. Berikut merupakan alur pendaftaran dari sistem kontrol akses yang akan dikembangkan.
+\begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.6\textwidth]{image/alur-pendaftaran.jpg}
+	\caption{Alur pendaftaran pada sistem kontrol akses}
+	\label{gambar:alur-pendaftaran}
+\end{figure}
+Pendaftaran dimulai dengan memasukkan data pengguna berupa nama, kemudian sistem akan meminta akses kamera pada perangkat. Setelah pengguna mengambil citra gambar, sistem kemudian akan melakukan proses deteksi wajah, dan jika terdeteksi, wajah akan disimpan ke database. Proses ini berlangsung sebanyak tiga kali untuk meningkatkan akurasi pengenalan wajah. 

@@ -16,18 +16,18 @@ Rencana linimasa pengerjaan untuk implementasi dan pengembangan sistem untuk tug
     \begin{enumerate}[a.]
         \item Perakitan Unit Pemrosesan: Menyiapkan unit mikrokontroler (Raspberry Pi) dan menghubungkannya dengan modul pendukung seperti kamera dan layar antarmuka.
         \item Instalasi Modul Kontrol: Merangkai modul relay elektronik yang berfungsi sebagai jembatan penghubung antara sinyal digital dari sistem dengan kunci fisik pada gerbang.
-        \item Pemasangan Fisik (Mounting): Menempatkan seluruh komponen elektronik ke dalam casing pelindung dan memasangnya pada tiang gerbang dengan posisi sudut pandang kamera yang optimal untuk menangkap wajah pengguna.
+        \item Pemasangan Fisik: Menempatkan seluruh komponen elektronik ke dalam \textit{casing} pelindung dan memasangnya pada tiang gerbang dengan posisi sudut pandang kamera yang optimal untuk menangkap wajah pengguna.
     \end{enumerate}
 
     \item Pengembangan Logika Perangkat Lunak \\
     Pada tahap ini, logika kecerdasan buatan dan kontrol sistem dibangun.
     \begin{enumerate}[a.]
         \item Implementasi Algoritma: Menanamkan algoritma deteksi dan pengenalan wajah ke dalam unit pemrosesan agar mampu mengidentifikasi pengguna secara real-time.
-        \item Pemrograman Logika Kontrol: Membuat program pengendali yang bertugas mengirimkan sinyal pembukaan gerbang hanya jika hasil verifikasi wajah dinyatakan valid (cocok dengan database).
+        \item Pemrograman Logika Kontrol: Membuat program pengendali yang bertugas mengirimkan sinyal pembukaan gerbang hanya jika hasil verifikasi wajah dinyatakan valid (cocok dengan basis data).
         \item Mekanisme Sinkronisasi: Mengembangkan skrip otomatis untuk memastikan perangkat gerbang selalu memiliki data karyawan terbaru yang tersinkronisasi dari server pusat.
     \end{enumerate}
 
-    \item Pengembangan Platform Pendaftaran (Web) \\
+    \item Pengembangan Sistem Pendaftaran (Web) \\
     Tahap ini bertujuan menyediakan antarmuka bagi pengguna untuk mendaftarkan diri.
     \begin{enumerate}[a.]
         \item Pembuatan Portal Web: Membangun aplikasi berbasis web yang mudah diakses oleh karyawan melalui perangkat pribadi (laptop/ponsel).
@@ -38,7 +38,7 @@ Rencana linimasa pengerjaan untuk implementasi dan pengembangan sistem untuk tug
     Tahap akhir adalah menyatukan perangkat lunak dan perangkat keras dalam satu lingkungan kerja.
     \begin{enumerate}[a.]
         \item Pengujian Integrasi: Menghubungkan sistem wajah dengan mekanisme gerbang fisik untuk memastikan perintah "buka kunci" dari perangkat lunak benar-benar menggerakkan lengan gerbang.
-        \item Kalibrasi Lapangan: Melakukan penyesuaian sensitivitas kamera dan ambang batas (threshold) algoritma berdasarkan kondisi pencahayaan di lokasi pemasangan untuk meminimalkan kesalahan deteksi.
+        \item Kalibrasi Lapangan: Melakukan penyesuaian sensitivitas kamera dan ambang batas (\textit{threshold}) algoritma berdasarkan kondisi pencahayaan di lokasi pemasangan untuk meminimalkan kesalahan deteksi.
     \end{enumerate}
 \end{enumerate}
 \subsection{Implementasi Prototipe}

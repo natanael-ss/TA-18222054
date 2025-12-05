@@ -27,12 +27,8 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {III.1}{\ignorespaces Kebutuhan Fungsional Sistem}}{14}{table.caption.5}%
+\contentsline {table}{\numberline {III.1}{\ignorespaces Kebutuhan fungsional sistem}}{14}{table.caption.5}%
 \contentsline {table}{\numberline {III.2}{\ignorespaces Kebutuhan Nonfungsional Sistem}}{15}{table.caption.6}%
 \contentsline {table}{\numberline {III.3}{\ignorespaces Kriteria Evaluasi Kontrol Akses Fisik}}{18}{table.caption.7}%
 \contentsline {table}{\numberline {III.4}{\ignorespaces Analisis Penentuan Solusi Perangkat Gerbang Menggunakan Weighted Scoring Model}}{19}{table.caption.8}%
@@ -46,7 +42,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {table}{\numberline {III.7}{\ignorespaces Bobot penilaian untuk solusi pengenalan wajah}}{21}{table.caption.11}%
+\contentsline {table}{\numberline {III.7}{\ignorespaces Kriteria Evaluasi Untuk Solusi Pengenalan Wajah}}{21}{table.caption.11}%
 \contentsline {table}{\numberline {III.8}{\ignorespaces Analisis Penentuan Solusi Model Pengenalan Wajah Menggunakan Weighted Scoring Model}}{22}{table.caption.12}%
 \contentsline {table}{\numberline {III.9}{\ignorespaces Kriteria Evaluasi Proses Pendaftaran Mandiri}}{23}{table.caption.13}%
 \babel@toc {english}{}\relax 
@@ -58,9 +54,9 @@
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \contentsline {table}{\numberline {III.10}{\ignorespaces Analisis Penentuan Solusi Pendaftaran Mandiri Menggunakan Weighted Scoring Model}}{23}{table.caption.14}%
-\contentsline {table}{\numberline {III.11}{\ignorespaces Kriteria Penilaian Metode Integrasi Data}}{24}{table.caption.15}%
+\contentsline {table}{\numberline {III.11}{\ignorespaces Kriteria evaluasi Metode Integrasi Data}}{24}{table.caption.15}%
 \contentsline {table}{\numberline {III.12}{\ignorespaces Analisis Penentuan Solusi Integrasi Sistem Menggunakan Weighted Scoring Model}}{24}{table.caption.16}%
-\contentsline {table}{\numberline {III.13}{\ignorespaces Kriteria Penilaian KF-6: Mekanisme Keselamatan}}{25}{table.caption.17}%
+\contentsline {table}{\numberline {III.13}{\ignorespaces Kriteria Evaluasi Mekanisme Keselamatan}}{25}{table.caption.17}%
 \contentsline {table}{\numberline {III.14}{\ignorespaces Analisis Penentuan Mekanisme Keselamatan Menggunakan Weighted Scoring Model}}{25}{table.caption.18}%
 \addvspace {10\p@ }
 \babel@toc {english}{}\relax 
@@ -69,12 +65,14 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {V.1}{\ignorespaces Gantt chart rencana pengerjaan tugas akhir}}{34}{table.caption.28}%
+\contentsline {table}{\numberline {V.1}{\ignorespaces Gantt chart rencana pengerjaan tugas akhir}}{34}{table.caption.29}%
 \contentsline {table}{\numberline {V.2}{\ignorespaces Rencana implementasi prototipe}}{36}{table.5.2}%
 \contentsline {table}{\numberline {V.2}{\ignorespaces Rencana implementasi prototipe (lanjutan)}}{37}{table.5.2}%
 \contentsline {table}{\numberline {V.3}{\ignorespaces Desain pengujian dan evaluasi sistem}}{37}{table.5.3}%
-\contentsline {table}{\numberline {V.4}{\ignorespaces Analisis risiko dan mitigasi proyek}}{40}{table.caption.29}%
+\contentsline {table}{\numberline {V.4}{\ignorespaces Analisis risiko dan mitigasi proyek}}{40}{table.caption.30}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -101,5 +99,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {table}{\numberline {5}{\ignorespaces Transkrip Wawancara dengan Pengelola Gedung (10 November 2025)}}{43}{table.Alph0.5}%
+\contentsline {table}{\numberline {5}{\ignorespaces Transkrip Wawancara dengan Pengelola Gedung (lanjutan)}}{44}{table.Alph0.5}%
+\contentsline {table}{\numberline {6}{\ignorespaces Transkrip Diskusi Teknis dan Bisnis (21 November 2025)}}{45}{table.Alph0.6}%
+\contentsline {table}{\numberline {6}{\ignorespaces Transkrip Diskusi Teknis dan Bisnis (lanjutan)}}{46}{table.Alph0.6}%

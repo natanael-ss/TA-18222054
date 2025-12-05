@@ -26,7 +26,7 @@ Regulasi tersebut menekankan bahwa sistem kontrol akses harus mampu memberikan p
 Berbagai institusi dan organisasi telah menerapkan solusi teknologi kontrol akses menggunakan RFID, QR code, hingga pengenalan wajah (\textit{face recognition}).
 Namun, metode berbasis kartu akses memiliki risiko kartu bisa hilang, tertukar, atau dipinjamkan, yang mengurangi keamanan akses.
 Sistem sidik jari, meskipun memakai biometrik, tetap memerlukan kontak fisik sehingga kurang higienis dan kurang nyaman, terutama pada area publik atau gedung dengan banyak kunjungan.
-Teknologi pengenalan wajah menawarkan keunggulan berupa oto matisasi, peningkatan keamanan, pengurangan interaksi fisik, dan kecepatan verifikasi pengguna.
+Teknologi pengenalan wajah menawarkan keunggulan berupa otomatisasi, peningkatan keamanan, pengurangan interaksi fisik, dan kecepatan verifikasi pengguna.
 Namun dalam konteks tamu, penerapan pengenalan wajah memiliki pertimbangan tambahan seperti aspek privasi dan risiko penggunaan data biometrik.
 Hal ini selaras dengan prinsip perlindungan data pribadi sebagaimana diatur dalam Undang-Undang Perlindungan Data Pribadi di Indonesia, yang mengatur bahwa pengumpulan dan pemrosesan data biometrik membutuhkan persetujuan dari pemilik data.
 Oleh karena itu, sistem kontrol akses pada bangunan cerdas perlu menyediakan alternatif metode autentikasi bagi tamu yang tidak bersedia atau tidak memungkinkan untuk memberikan data biometriknya.
@@ -47,25 +47,26 @@ Selain itu, proses verifikasi tamu yang tidak otomatis dapat menyebabkan antrean
 Oleh karena itu, diperlukan sistem kontrol akses yang mampu melakukan identifikasi dan pencatatan tamu secara otomatis serta tetap memperhatikan aspek keamanan dan perlindungan data pribadi.
 Masalah tersebut dapat dirumuskan sebagai berikut:
 \begin{enumerate}
-\item	Bagaimana merancang sistem kontrol akses berbasis pengenalan wajah pada Gedung ITB Innovation Park?
-\item   Bagaimana menyediakan mekanisme autentikasi alternatif bagi tamu tanpa mengabaikan aspek keamanan dan perlindungan data pribadi?
+\item	Bagaimana merancang sistem kontrol akses berbasis pengenalan wajah untuk manajemen tamu pada Gedung ITB Innovation Park?
+\item   Bagaimana mengembangkan mekanisme pendaftaran mandiri berbasis web dan sinkronisasi data wajah untuk mmendukung alur masuk tamu?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
-Tujuan dari tugas akhir ini adalah mengembangkan sistem kontrol akses berbasis pengenalan wajah untuk mendukung pengelolaan tamu pada bangunan cerdas.
+Tujuan dari tugas akhir ini adalah mengembangkan sistem kontrol akses berbasis pengenalan wajah untuk mendukung pengelolaan tamu pada gedung IIP.
 Sistem ini diharapkan dapat meningkatkan keamanan dan efisiensi pengelolaan kunjungan tamu serta menyediakan opsi autentikasi yang sesuai dengan kebutuhan operasional gedung.
 
 Secara khusus, tujuan tugas akhir ini adalah:
 \begin{enumerate}
 \item	Mengembangkan sistem kontrol akses tamu yang mampu melakukan identifikasi dan pencatatan kunjungan secara otomatis pada bangunan cerdas.
-\item   Merancang mekanisme autentikasi alternatif bagi tamu tanpa mengabaikan aspek keamanan dan perlindungan data pribadi.
+\item   Mengembangkan sistem pendaftaran mandiri yang memungkinkan tamu untuk mendaftarkan data identitas dan wajahnya sebelum melakukan kunjungan.
 \end{enumerate}
 
 Tugas akhir ini dinyatakan berhasil apabila memenuhi kriteria berikut:
 \begin{enumerate}
-\item   XX
-\item   XX
+\item   Sistem mampu melakukan proses autentikasi wajah tamu dan memberikan sinyal buka ke gerbang dengan waktu respons yang cepat untuk meminimalisir antrian.
+\item   Sistem pendaftaran mandiri dapat diakses dengan mudah oleh tamu dan mampu menyimpan data identitas serta wajah secara aman.
+\item   Sistem mampu secara konsisten membedakan antara tamu yang terdaftar dan yang tidak terdaftar.
 \end{enumerate}
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
@@ -73,7 +74,6 @@ Untuk menjaga ruang lingkup pembahasan dan memastikan solusi yang dikembangkan t
 \begin{enumerate}
 \item   Tugas akhir ini dikerjakan secara berkelompok yang terdiri dari 3 orang mahasiswa, yaitu Axelius Davin dengan NIM 18222016, Muhammad Rifa Ansyari dengan NIM 18222004, dan Natanael Steven dengan NIM 18222054.
 Penulis dalam hal ini berfokus pada pengembangan sistem kontrol akses untuk manajemen tamu.
-\item   Pengguna sistem yang dilibatkan adalah pihak pengelola gedung IIP beserta salah satu perusahaan yang menggunakan gedung IIP.
 \item   Sistem yang dikembangkan hanya mencakup satu unit gerbang sesuai ketersediaan sumber daya, namun dirancang dan dikembangkan sebagai representasi dari keseluruhan sistem.
 \item   Sistem akan dikembangkan menggunakan basis data independen yang tidak terintegrasi langsung dengan data yang dimiliki gedung.
 \end{enumerate}

@@ -6,31 +6,31 @@ Berdasarkan analisis kebutuhan sistem, terdapat beberapa opsi media penyimpanan 
 
 \begin{enumerate}
     \item \textbf{Penyimpanan Fisik (\textit{Local Storage}):}
-    \begin{itemize}
+    \begin{enumerate}
         \item SSD Eksternal
         \item HDD Eksternal
         \item Micro SD (Khusus untuk perangkat \textit{Edge}/Raspberry Pi)
-    \end{itemize}
+    \end{enumerate}
     \item \textbf{Penyimpanan Awan (\textit{Cloud Storage}):}
-    \begin{itemize}
+    \begin{enumerate}
         \item Google Cloud Platform (GCP)
         \item Amazon Web Services (AWS) S3
         \item Supabase Storage
-    \end{itemize}
+    \end{enumerate}
 \end{enumerate}
 
 \section*{D.2 Estimasi Kapasitas Penyimpanan Citra (Server/Cloud)}
 Perhitungan ini digunakan untuk mengestimasi kebutuhan ruang penyimpanan bagi data mentah (\textit{raw images}) yang digunakan untuk proses pendaftaran dan validasi visual.
 
 \textbf{Parameter:}
-\begin{itemize}
+\begin{enumerate}
     \item Total Kapasitas Pekerja: 1.200 orang
     \item Asumsi Pengunjung Mingguan: 200 orang
     \item Total Basis Pengguna ($N$): $1.200 + 200 = 1.400$ orang
     \item Jumlah Sampel Foto per Orang: 3 foto
     \item Ukuran Maksimum per Foto: 400 KB
     \item Retensi Foto Pengunjung: 7 hari (Siklus mingguan)
-\end{itemize}
+\end{enumerate}
 
 \textbf{Kalkulasi Total:}
 $$
@@ -46,10 +46,10 @@ $$
 Pada perangkat \textit{edge} (Raspberry Pi), sistem tidak menyimpan foto asli melainkan hanya menyimpan representasi matematis (vektor) dari wajah untuk mempercepat proses pencocokan dan menghemat ruang.
 
 \textbf{Parameter:}
-\begin{itemize}
+\begin{enumerate}
     \item Ukuran Vektor Fitur (Embeddings): 512 Byte s.d. 2 KB (tergantung model)
     \item Total Pengguna: 1.400 orang
-\end{itemize}
+\end{enumerate}
 
 \textbf{Kalkulasi:}
 $$

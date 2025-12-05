@@ -61,8 +61,8 @@ Berikut merupakan rangkuman alternatif solusi yang dapat digunakan untuk memenuh
 
     \item KF-2 Deteksi Wajah
     \begin{enumerate}[a.]
-        \item RetinaFace, merupakan detektor wajah satu tahap dengan akurasi tinggi yang mampu mendeteksi wajah dalam berbagai kondisi pose dan pencahayaan. Model ini memanfaatkan landmark detection untuk meningkatkan stabilitas proses alignment pada tahap selanjutnya. 
-        \item YOLO-face adalah pendekatan deteksi wajah berbasis arsitektur YOLO yang berorientasi pada kecepatan dan kemampuan real-time. Metode ini memperlakukan wajah sebagai objek yang dideteksi melalui bounding box secara langsung, sehingga cocok untuk implementasi sistem kontrol akses yang memerlukan respons cepat. Model YOLO-based face detector telah banyak digunakan dalam sistem deteksi wajah pada perangkat edge dan aplikasi absensi otomatis.
+        \item RetinaFace, merupakan detektor wajah satu tahap dengan akurasi tinggi yang mampu mendeteksi wajah dalam berbagai kondisi pose dan pencahayaan. Model ini memanfaatkan \textit{landmark detection} untuk meningkatkan stabilitas proses \textit{alignment} pada tahap selanjutnya. 
+        \item YOLO-face adalah pendekatan deteksi wajah berbasis arsitektur YOLO yang berorientasi pada kecepatan dan kemampuan \textit{real-time}. Metode ini memperlakukan wajah sebagai objek yang dideteksi melalui \textit{bounding box} secara langsung, sehingga cocok untuk implementasi sistem kontrol akses yang memerlukan respons cepat. Model YOLO-based face detector telah banyak digunakan dalam sistem deteksi wajah pada perangkat edge dan aplikasi absensi otomatis.
         \item Blazeface adalah detektor wajah yang dirancang untuk efisiensi tinggi pada perangkat mobile dengan sumber daya terbatas. Dengan ukuran model yang kecil dan latensi sangat rendah, BlazeFace dapat digunakan untuk prototipe sistem atau perangkat kontrol akses dengan komputasi ringan tanpa mengorbankan performa secara signifikan.
     \end{enumerate}
 
@@ -71,7 +71,7 @@ Berikut merupakan rangkuman alternatif solusi yang dapat digunakan untuk memenuh
     Alternatif Solusi untuk pengenalan wajah adalah kombinasi dari alternatif solusi untuk \textit{Feature Extraction} dan \textit{Matching} 
     \textit{Feature Extraction}:
     \begin{enumerate}[a.]
-        \item ResNet-50, yaitu arsitektur CNN dengan 50 layer yang menggunakan mekanisme residual learning, menjadi backbone umum untuk pengenalan wajah karena mampu mengekstraksi fitur wajah yang kuat dan stabil.
+        \item ResNet-50, yaitu arsitektur CNN dengan 50 layer yang menggunakan mekanisme residual learning, menjadi \textit{backbone} umum untuk pengenalan wajah karena mampu mengekstraksi fitur wajah yang kuat dan stabil.
         \item MobileFaceNet, yaitu model CNN ringan yang cocok digunakan pada perangkat kecil, tetapi masih cukup baik dalam menangkap ciri penting dari wajah.
     \end{enumerate}
     \medskip
@@ -84,7 +84,7 @@ Berikut merupakan rangkuman alternatif solusi yang dapat digunakan untuk memenuh
 
     \item KF-4 Manajemen Pendaftaran
     \begin{enumerate}[a.]
-        \item Aplikasi Web, menggunakan website yang dapat diakses melalui browser untuk pendaftaran.
+        \item Aplikasi Web, menggunakan \textit{website} yang dapat diakses melalui browser untuk pendaftaran.
         \item Aplikasi Desktop, menggunakan aplikasi berbasis desktop untuk perangkat PC resepsionis.
         \item Aplikasi Mobile, menggunakan aplikasi berbasis mobile untuk ponsel pengguna.
     \end{enumerate}

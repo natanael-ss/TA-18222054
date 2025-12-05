@@ -12,7 +12,7 @@ Definisi tersebut menegaskan pentingnya integrasi teknologi dalam menunjang fung
 
 Ketentuan mengenai bagaimana kinerja sebuah bangunan cerdas dinilai dijelaskan lebih detail pada Surat Edaran Menteri PUPR Nomor 22/SE/M/2024.
 Dalam pedoman ini, sistem kontrol akses termasuk dalam unsur yang dievaluasi sebagai bagian dari parameter kemampuan sistem.
-Penilaian yang dilakukan tidak hanya berfokus pada fungsi dasar pembatasan akses, tetapi juga mencakup kemampuan sistem untuk memberikan pemantauan status perangkat secara langsung, pengaturan hak akses yang dapat disesuaikan menurut lokasi serta waktu, serta keandalan dalam menghadapi kondisi darurat melalui penerapan mekanisme \textit{fail-safe} \parencite{kemenpupr2024}.
+Penilaian yang dilakukan tidak hanya berfokus pada fungsi dasar pembatasan akses, tetapi juga mencakup kemampuan sistem untuk memberikan pemantauan status perangkat secara langsung, pencegahan akses ganda ke area tertentu (fitur \textit{antipassback}), pengaturan hak akses yang dapat disesuaikan menurut lokasi serta waktu, serta keandalan dalam menghadapi kondisi darurat. \parencite{kemenpupr2024}.
 
 Dengan adanya standar tersebut, setiap sistem kontrol akses pada bangunan cerdas perlu dirancang agar mampu memenuhi berbagai kebutuhan operasional gedung, termasuk akurasi identifikasi pengguna, integrasi dengan infrastruktur keselamatan, dan kemampuan melakukan pengelolaan akses yang terstruktur.
 Kepatuhan terhadap regulasi ini menjadi dasar penting dalam pengembangan sistem kontrol akses yang aman, adaptif, dan sesuai dengan praktik terbaik bangunan cerdas.
@@ -38,9 +38,6 @@ Gambar \ref{gambar:contoh-pintu-akses} menunjukkan contoh implementasi desain pi
 	\label{gambar:contoh-pintu-akses}
 \end{figure}
 
-Selain ketentuan regulatif, hasil kajian teknis turut memberikan dasar dalam pemilihan desain gerbang.
-\autocite{ding2021winggate} menemukan bahwa gerbang tipe \textit{wing} memiliki kinerja yang lebih baik dibandingkan tipe \textit{flat}, baik dari sisi pengaturan aliran pengguna maupun kemampuan mendukung proses evakuasi.
-Temuan tersebut menegaskan bahwa desain gerbang tidak hanya berkaitan dengan estetika atau mekanisme mekanik, tetapi juga berkontribusi terhadap keselamatan dan efisiensi operasional bangunan dalam skenario penggunaan normal maupun keadaan darurat.
 \section{Pengenalan Wajah}
 Pengenalan wajah merupakan salah satu teknologi dalam bidang visi komputer yang berfungsi untuk mengidentifikasi atau memverifikasi identitas seseorang berdasarkan citra atau rekaman video.
 Pada dasarnya, teknologi ini memecahkan persoalan pengenalan pola visual, di mana sistem harus mampu mengenali wajah sebagai objek tiga dimensi yang ditangkap dalam bentuk gambar dua dimensi, meskipun terdapat variasi pencahayaan, sudut pandang, maupun ekspresi wajah.
@@ -51,7 +48,7 @@ Penggunaan teknologi pengenalan wajah sebagai metode autentikasi biometrik semak
 Tren adopsi biometrik ini juga tercermin dalam laporan HID Global yang dikutip oleh  \textcite{Jadhav_2024}, yang menunjukkan peningkatan penggunaan biometrik untuk kontrol akses dari 30 persen menjadi 39 persen dalam dua tahun terakhir.
 Temuan ini mengindikasikan bahwa pengenalan wajah semakin diandalkan sebagai solusi autentikasi yang cepat, praktis, dan aman bagi berbagai kebutuhan operasional.
 
-\subsubsection{Parameter Evaluasi Kinerja Biometrik}
+\subsection{Parameter Evaluasi Kinerja Biometrik}
 Untuk menilai tingkat keandalan sistem pengenalan wajah, standar internasional ISO/IEC 19795-1 menetapkan sejumlah metrik utama yang digunakan dalam proses pengujian \parencite{iso19795}.
 \begin{enumerate}
 	\item \textit{Accuracy}, yaitu perbandingan antara jumlah prediksi yang benar dengan total keseluruhan percobaan.
@@ -73,13 +70,13 @@ Dari sisi teknis, keamanan data biometrik menuntut penerapan mekanisme perlindun
 Melalui enkripsi, representasi numerik dari wajah (misalnya vektor fitur) akan disimpan dalam bentuk terenkripsi sehingga tidak dapat diakses ataupun dikonversi kembali menjadi citra wajah asli tanpa kunci dekripsi yang valid.
 Pendekatan ini berfungsi sebagai mitigasi penting apabila terjadi pencurian perangkat atau serangan terhadap basis data, karena data biometrik tetap tidak dapat digunakan tanpa kunci yang sah.
 
-\section{Pengembangan Sistem Gerbang Otomatis pada KAI}
-PT Kereta Api Indonesia (KAI) telah mengimplementasikan layanan \textit{Face Recognition Boarding} sebagai bagian dari transformasi digital untuk mempercepat proses keberangkatan kereta api jarak jauh.
-Layanan ini memungkinkan penumpang melakukan verifikasi identitas secara otomatis melalui kamera berbasis pengenalan wajah, sehingga tidak perlu lagi menunjukkan KTP maupun mencetak \textit{boarding pass}.
-Sistem ini mulai digunakan di beberapa stasiun besar, seperti Stasiun Gambir sejak September 2023, dan akan diperluas ke stasiun lainnya.
-Untuk dapat memanfaatkannya, penumpang harus mendaftarkan identitas dan foto wajah melalui aplikasi Access by KAI, yang kemudian diverifikasi dan dikaitkan dengan data tiket elektronik.
-Saat melakukan \textit{boarding}, wajah penumpang dicocokkan dengan data yang telah terdaftar, dan jika valid, gerbang terbuka secara otomatis.
-Pendekatan ini diklaim meningkatkan efisiensi, keamanan, serta mengurangi potensi penyalahgunaan identitas atau tiket. Meskipun demikian, KAI tidak menetapkan layanan ini sebagai satu-satunya jalur akses; alternatif tetap disediakan guna memenuhi prinsip perlindungan data pribadi sebagaimana diatur dalam UU No. 27 Tahun 2022.
+% \section{Pengembangan Sistem Gerbang Otomatis pada KAI}
+% PT Kereta Api Indonesia (KAI) telah mengimplementasikan layanan \textit{Face Recognition Boarding} sebagai bagian dari transformasi digital untuk mempercepat proses keberangkatan kereta api jarak jauh.
+% Layanan ini memungkinkan penumpang melakukan verifikasi identitas secara otomatis melalui kamera berbasis pengenalan wajah, sehingga tidak perlu lagi menunjukkan KTP maupun mencetak \textit{boarding pass}.
+% Sistem ini mulai digunakan di beberapa stasiun besar, seperti Stasiun Gambir sejak September 2023, dan akan diperluas ke stasiun lainnya.
+% Untuk dapat memanfaatkannya, penumpang harus mendaftarkan identitas dan foto wajah melalui aplikasi Access by KAI, yang kemudian diverifikasi dan dikaitkan dengan data tiket elektronik.
+% Saat melakukan \textit{boarding}, wajah penumpang dicocokkan dengan data yang telah terdaftar, dan jika valid, gerbang terbuka secara otomatis.
+% Pendekatan ini diklaim meningkatkan efisiensi, keamanan, serta mengurangi potensi penyalahgunaan identitas atau tiket. Meskipun demikian, KAI tidak menetapkan layanan ini sebagai satu-satunya jalur akses; alternatif tetap disediakan guna memenuhi prinsip perlindungan data pribadi sebagaimana diatur dalam UU No. 27 Tahun 2022.
 
 \section{Metodologi Design Thinking}
 Pendekatan pengembangan sistem pada penelitian ini menggunakan metodologi \textit{Design Thinking}, yaitu kerangka kerja iteratif yang berfokus pada pemahaman mendalam terhadap pengguna sebagai dasar pengembangan solusi.

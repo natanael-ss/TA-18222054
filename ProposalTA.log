@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.4)  5 DEC 2025 04:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2025.11.4)  5 DEC 2025 07:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1128,48 +1128,13 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ProposalTA.bbl' found.
- (ProposalTA.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                kainz2019raspberry
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                nielsen1994usability
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                pressman2014software
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                raspberrypi
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                simarmata2021gerbang
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (ProposalTA.bbl)
 Package biblatex Info: Reference section=0 on input line 178.
 Package biblatex Info: Reference segment=0 on input line 178.
 File: image/ganesha.jpg Graphic file (type bmp)
 <image/ganesha.jpg>
- [1
+
+[1
 
 
 ] [1] (ProposalTA.toc
@@ -1261,7 +1226,7 @@ Bab I.
 
 
 ] [2] [3] [4]
-Overfull \hbox (3.38016pt too wide) in paragraph at lines 100--103
+Overfull \hbox (3.38016pt too wide) in paragraph at lines 102--105
 []\TU/TimesNewRoman(0)/m/n/12 Tahap ini bertujuan mewujudkan ide menjadi bentuk
  nyata menggunakan kom-
  []
@@ -1273,19 +1238,18 @@ Bab II.
 ]
 File: image/pintu-akses-2.png Graphic file (type bmp)
 <image/pintu-akses-2.png>
- [7] [8]
+ [7] [8] [9]
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 54.
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 87.
 
-[9]) (Bab III - Analisis-Masalah.tex [10] [11]
+) (Bab III - Analisis-Masalah.tex [10]
 Bab III.
-[12
+[11
 
 ]
 File: image/denah-sebelum.png Graphic file (type bmp)
 <image/denah-sebelum.png>
- [13] (table/fungsionalReq.tex
+ [12] (table/fungsionalReq.tex
 Underfull \hbox (badness 2626) in paragraph at lines 19--19
 []|\TU/TimesNewRoman(0)/m/n/12 KF-02: Pendeteksi
  []
@@ -1295,12 +1259,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--19
 []|\TU/TimesNewRoman(0)/m/n/12 KF-05: Integrasi
  []
 
-) [14] (table/nonfungsionalReq.tex
+) [13] (table/nonfungsionalReq.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
 []|\TU/TimesNewRoman(0)/m/n/12 KNF-03: Waktu
  []
 
-) [15] [16] [17] (table/wsm_fr1_criteria.tex
+) [14] [15] [16] (table/wsm_fr1_criteria.tex
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
 []|\TU/TimesNewRoman(0)/m/n/12 Kecepatan Melalui
  []
@@ -1325,12 +1289,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--19
 []|\TU/TimesNewRoman(0)/m/n/12 Keandalan Opera-
  []
 
-) [18] (table/wsm_fr1.tex
-Overfull \hbox (32.76378pt too wide) in paragraph at lines 8--55
+) [17] (table/wsm_fr1.tex
+Overfull \hbox (35.38367pt too wide) in paragraph at lines 8--55
  [][] 
  []
 
-) [19] (table/wsm_fr2_criteria.tex
+) [18] (table/wsm_fr2_criteria.tex
 Underfull \hbox (badness 1852) in paragraph at lines 24--24
 []|\TU/TimesNewRoman(0)/m/n/12 Kecepatan (\TU/TimesNewRoman(0)/m/it/12 Latency
  []
@@ -1360,51 +1324,18 @@ Underfull \hbox (badness 1874) in paragraph at lines 24--24
 []|\TU/TimesNewRoman(0)/m/n/12 Kompleksitas memengaruhi waktu inte-
  []
 
-) (table/wsm_fr2.tex [20]) (table/wsm_fr3_criteria.tex
+) (table/wsm_fr2.tex [19]) (table/wsm_fr3_criteria.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
 []|\TU/TimesNewRoman(0)/m/n/12 Efisiensi perangkat
  []
 
-
-LaTeX Warning: Citation 'pressman2014software' on page 21 undefined on input li
-ne 17.
-
-
-LaTeX Warning: Citation '' on page 21 undefined on input line 17.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
-[]|[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
-\TU/TimesNewRoman(0)/m/n/12 membahas tentang kualitas perangkat
- []
-
-
-Underfull \hbox (badness 1092) in paragraph at lines 17--17
-\TU/TimesNewRoman(0)/m/n/12 pemeliharaan. Skalabilitas dan pemeli-
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 17--17
-\TU/TimesNewRoman(0)/m/n/12 haraan yang baik dapat menekan biaya
- []
-
-) [21] (table/wsm_fr3.tex) [22] (table/wsm_fr4_criteria.tex
-
-LaTeX Warning: Citation 'nielsen1994usability' on page 23 undefined on input li
-ne 21.
-
-
+) [20] (table/wsm_fr3.tex) [21] (table/wsm_fr4_criteria.tex
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
 []|\TU/TimesNewRoman(0)/m/n/12 Kemudahan Peng-
  []
 
 
-LaTeX Warning: Citation 'nielsen1994usability' on page 23 undefined on input li
-ne 21.
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 21.
 
 
 Underfull \hbox (badness 4940) in paragraph at lines 21--21
@@ -1412,25 +1343,12 @@ Underfull \hbox (badness 4940) in paragraph at lines 21--21
  []
 
 
-LaTeX Warning: Citation 'nielsen1994usability' on page 23 undefined on input li
-ne 21.
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 21.
 
 
-LaTeX Warning: Citation 'nielsen1994usability' on page 23 undefined on input li
-ne 21.
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 21.
 
-
-Underfull \hbox (badness 6236) in paragraph at lines 21--21
-\TU/TimesNewRoman(0)/m/n/12 badi tidak disalahgunakan, sesuai de-
- []
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 21--21
-\TU/TimesNewRoman(0)/m/n/12 ngan prinsip keamanan dalam \TU/TimesNewRoman(0)/m/
-it/12 usability
- []
-
-) [23] (table/wsm_fr4.tex) [24] (table/wsm_fr5_criteria.tex
+) [22] (table/wsm_fr4.tex) [23] (table/wsm_fr5_criteria.tex
 Underfull \hbox (badness 3271) in paragraph at lines 22--22
 \TU/TimesNewRoman(0)/m/n/12 dan penanganan kesalahan (\TU/TimesNewRoman(0)/m/it
 /12 debugging\TU/TimesNewRoman(0)/m/n/12 )
@@ -1441,12 +1359,12 @@ Underfull \hbox (badness 2837) in paragraph at lines 22--22
 \TU/TimesNewRoman(0)/m/n/12 penting untuk mempercepat proses pe-
  []
 
-) (table/wsm_fr5.tex) [25] (table/wsm_fr6_criteria.tex
+) (table/wsm_fr5.tex) [24] (table/wsm_fr6_criteria.tex
 Underfull \hbox (badness 2512) in paragraph at lines 22--22
 \TU/TimesNewRoman(0)/m/n/12 an dan evakuasi menjadi syarat utama
  []
 
-) (table/wsm_fr6.tex)) (Bab IV - Desain-Konsep-Solusi.tex [26]
+) (table/wsm_fr6.tex)) (Bab IV - Desain-Konsep-Solusi.tex [25]
 Bab IV.
 File: image/alur-before.png Graphic file (type bmp)
 <image/alur-before.png>
@@ -1454,45 +1372,28 @@ File: image/alur-after-karyawan.png Graphic file (type bmp)
 <image/alur-after-karyawan.png>
 File: image/alur-after-tamu.png Graphic file (type bmp)
 <image/alur-after-tamu.png>
-[27
+[26
 
 ]
 File: image/alur-after-darurat.png Graphic file (type bmp)
 <image/alur-after-darurat.png>
- [28]
+ [27]
 File: image/denah-sebelum.png Graphic file (type bmp)
 <image/denah-sebelum.png>
 File: image/denah-sesudah.png Graphic file (type bmp)
 <image/denah-sesudah.png>
- [29]
+ [28]
 File: image/gerbang-satuan.png Graphic file (type bmp)
 <image/gerbang-satuan.png>
- [30]
-
-LaTeX Warning: Citation 'raspberrypi' on page 31 undefined on input line 67.
-
-
-LaTeX Warning: Citation 'kainz2019raspberry' on page 31 undefined on input line
- 71.
-
-
-LaTeX Warning: Citation 'simarmata2021gerbang' on page 31 undefined on input li
-ne 73.
-
-
-Overfull \hbox (10.42001pt too wide) in paragraph at lines 73--74
-\TU/TimesNewRoman(0)/m/n/12 aksesibilitas yang luas, sesuai dengan standar kese
-lamatan ([]). 
- []
-
+ [29]
 File: image/hubungan-komponen.png Graphic file (type bmp)
 <image/hubungan-komponen.png>
-[31]
+ [30]
 File: image/proses-autentikasi.png Graphic file (type bmp)
 <image/proses-autentikasi.png>
- [32]) (Bab V - Rencana-Selanjutnya.tex [33] [34]
+ [31]) (Bab V - Rencana-Selanjutnya.tex [32] [33]
 Bab V.
-(table/tab_linimasa.tex) [35
+(table/tab_linimasa.tex) [34
 
 ]
 Overfull \hbox (3.48325pt too wide) in paragraph at lines 17--18
@@ -1500,7 +1401,7 @@ Overfull \hbox (3.48325pt too wide) in paragraph at lines 17--18
 ontroler (Raspberry
  []
 
-[36] (table/tab_rencana_implementasi.tex
+[35] (table/tab_rencana_implementasi.tex
 Overfull \hbox (26.13197pt too wide) in alignment at lines 2--8
  [] [] 
  []
@@ -1520,7 +1421,7 @@ Overfull \hbox (26.13197pt too wide) in alignment at lines 15--38
  [] [] 
  []
 
-[37]) (table/tab_desain_pengujian.tex
+[36]) (table/tab_desain_pengujian.tex
 Overfull \hbox (19.9181pt too wide) in alignment at lines 5--12
  [] [] [] 
  []
@@ -1565,7 +1466,7 @@ Overfull \hbox (19.9181pt too wide) in alignment at lines 23--89
  [] [] [] 
  []
 
-[38] [39]) (table/tab_analisis_risiko.tex)) [40] [41] [42
+[37] [38]) (table/tab_analisis_risiko.tex)) [39] [40] [41
 
 
 ]
@@ -1573,7 +1474,7 @@ Overfull \hbox (19.9181pt too wide) in alignment at lines 23--89
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 358.
 See the caption package documentation for explanation.
 
-[43] (ProposalTA.aux)
+[42] (ProposalTA.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1583,7 +1484,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: EB0C33048D3ADBFC5E6D665246D0B482;8095.
+(rerunfilecheck)             Checksum: 7DE7812FBE2D3301CCDFD935CAE4BF0F;7795.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -1592,12 +1493,12 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31590 strings out of 409617
- 619284 string characters out of 5778276
- 1964287 words of memory out of 5000000
- 53277 multiletter control sequences out of 15000+600000
+ 31614 strings out of 409617
+ 620043 string characters out of 5778276
+ 1964106 words of memory out of 5000000
+ 53301 multiletter control sequences out of 15000+600000
  566577 words of font info for 101 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,12n,93p,1253b,6576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,12n,93p,1253b,6929s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ProposalTA.pdf (50 pages).
+Output written on ProposalTA.pdf (49 pages).
